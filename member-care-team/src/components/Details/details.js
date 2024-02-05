@@ -7,6 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 import './details.css'
 
@@ -21,10 +24,10 @@ const Details = () => {
     ]
 
     const followUpArray = [
-        { id: 1, followUpDate: '02-02-2024', completeStatus: 'Complete' },
-        { id: 2, followUpDate: '04-02-2024', completeStatus: 'Complete' },
-        { id: 3, followUpDate: '06-02-2024', completeStatus: 'Not Complete' },
-        { id: 4, followUpDate: '08-02-2024', completeStatus: 'Not Complete' },
+        { id: 1, followUpDate: '02-02-2024', completeStatus: true },
+        { id: 2, followUpDate: '04-02-2024', completeStatus: true },
+        { id: 3, followUpDate: '06-02-2024', completeStatus: false },
+        { id: 4, followUpDate: '08-02-2024', completeStatus: false },
     ]
 
     return (
@@ -66,7 +69,7 @@ const Details = () => {
                                             key={row.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            <TableCell component="th" scope="row">{index}</TableCell>
+                                            <TableCell component="th" scope="row">{index+1}</TableCell>
                                             <TableCell align="right">{row.medicineName}</TableCell>
                                             <TableCell align="right">{row.medicineQuantity}</TableCell>
                                         </TableRow>
@@ -95,7 +98,7 @@ const Details = () => {
                                         >
                                             <TableCell component="th" scope="row">{index}</TableCell>
                                             <TableCell align="right">{row.followUpDate}</TableCell>
-                                            <TableCell align="right">{row.completeStatus}</TableCell>
+                                            <TableCell align="right">{(row.completeStatus ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />) }</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>

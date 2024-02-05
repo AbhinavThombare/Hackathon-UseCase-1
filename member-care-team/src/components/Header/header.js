@@ -34,7 +34,7 @@ const Header = () => {
                                 <Link className='nav-link' to='/medicine'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Medicine</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className='nav-link' to='#'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Notification</Link>
+                                <Link className='nav-link' to='/notification'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Notification</Link>
                             </li>
                         </ul>
                     </div>
