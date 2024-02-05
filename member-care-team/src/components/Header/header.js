@@ -28,7 +28,7 @@ const Header = () => {
                                 <Link className='nav-link' to='/detials'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/> Details</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className='nav-link' to='#'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Follow Up</Link>
+                                <Link className='nav-link' to='/followup'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Follow Up</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/medicine'><span><FontAwesomeIcon icon={faCircleInfo} /></span><br/>Medicine</Link>

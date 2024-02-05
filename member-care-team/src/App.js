@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Details from './components/Details/details';
 import MedicineDetials from './components/medicineDetials/medicineDetails';
+import FollowUp from './components/FollowUp/followUp';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path:'medicine',
     element: <MedicineDetials/>
+  },
+  {
+    path:'followup',
+    element: <FollowUp/>
   }
 
 ]);

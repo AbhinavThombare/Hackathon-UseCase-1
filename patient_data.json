@@ -1,0 +1,55 @@
+{
+ "patientCare": [
+   {
+     "date": "2024-02-05",
+     "bloodGlucoseLevel": 120,
+     "meals": [
+       {"type": "Breakfast", "carbs": 30, "insulinUnits": 2},
+       {"type": "Lunch", "carbs": 45, "insulinUnits": 3},
+       {"type": "Dinner", "carbs": 35, "insulinUnits": 2}
+     ],
+     "physicalActivity": "30 minutes brisk walking",
+     "notes": "Felt a bit fatigued in the afternoon"
+   },
+   {
+     "date": "2024-02-06",
+     "bloodGlucoseLevel": 110,
+     "meals": [
+       {"type": "Breakfast", "carbs": 25, "insulinUnits": 2},
+       {"type": "Lunch", "carbs": 40, "insulinUnits": 3},
+       {"type": "Dinner", "carbs": 30, "insulinUnits": 2}
+     ],
+     "medication": "Metformin 500mg, 2 times a day",
+     "notes": "Good energy levels throughout the day"
+   },
+   {
+     "date": "2024-02-07",
+     "bloodGlucoseLevel": 115,
+     "meals": [
+       {"type": "Breakfast", "carbs": 28, "insulinUnits": 2},
+       {"type": "Lunch", "carbs": 42, "insulinUnits": 3},
+       {"type": "Dinner", "carbs": 33, "insulinUnits": 2}
+     ],
+     "physicalActivity": "45 minutes of cycling",
+     "notes": "Mood was elevated today"
+   }
+   // Add more entries as needed
+ ],
+ "weeklySummary": [
+   {
+     "week": "2024-02-05 to 2024-02-11",
+     "averageBloodGlucose": 115,
+     "totalInsulinUnits": 21,
+     "totalCarbsConsumed": 270,
+     "adherenceToMedication": 100
+   },
+   {
+     "week": "2024-02-12 to 2024-02-18",
+     "averageBloodGlucose": 108,
+     "totalInsulinUnits": 20,
+     "totalCarbsConsumed": 260,
+     "adherenceToMedication": 95
+   }
+   // Add more weekly summaries as needed
+ ]
+}

@@ -1,0 +1,16 @@
+.medicine-table-div{
+    margin: 10px;
+    background-color: #FEEAE6;
+}
+
+.medicine-div{
+    padding: 10px;
+}
+
+.patient-title{
+    font-size: 25px;
+    
+}
+.patient-title strong{
+    cursor: pointer;
+}
