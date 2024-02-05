@@ -1,0 +1,55 @@
+.summary-data-div{
+    display: flex;
+    justify-content: center;
+}
+
+.previous-history{
+    background-color: #FEEAE6;
+    margin: 5px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.previous-history-title{
+    font-size: 25px;
+}
+
+.discharge-summary{
+    background-color: #FEEAE6;
+    margin: 5px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.discharge-summary-title{
+    font-size: 25px;
+}
+
+.table-data-div{
+    display: flex;
+    justify-content: center;
+}
+
+.medicine-prescribed{
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff6f5;
+}
+
+.medicine-prescribed-title{
+    font-size: 25px;
+}
+
+.followUp-div{
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff6f5;
+}
+
+.followUp-title{
+    font-size: 25px;
+}

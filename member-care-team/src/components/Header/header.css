@@ -1,6 +1,6 @@
 .header-div{
-    background-color: #0E00B8;
-    color: white;
+    background-color: #ffb098;
+    color: #442C2E;
 }
 
 hr{
@@ -19,5 +19,5 @@ hr{
 }
 
 .nav-link{
-    color: white !important;
+    color: #442C2E !important;
 }
