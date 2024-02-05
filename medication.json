@@ -1,0 +1,22 @@
+{
+ "medicationData": [
+   {
+     "medicationName": "Insulin",
+     "dosageDetails": [
+       {"timeOfDay": "Morning", "units": 2},
+       {"timeOfDay": "Afternoon", "units": 3},
+       {"timeOfDay": "Evening", "units": 2}
+     ],
+     "modeOfDose": "Subcutaneous injection"
+   },
+   {
+     "medicationName": "Metformin",
+     "dosageDetails": [
+       {"timeOfDay": "Morning", "units": 1},
+       {"timeOfDay": "Evening", "units": 1}
+     ],
+     "modeOfDose": "Oral"
+   },
+   // Add more medication entries as needed
+ ]
+}
