@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import PatientData from '../../patient_data.json'
 
 
 import './header.css'
@@ -13,7 +14,7 @@ const Header = () => {
         <div className='header-div'>
             <div className='patient-id-div'>
                 <div className='patient-id-div-title'>
-                    <p className='pateint-id-title'> <span><FontAwesomeIcon icon={faUser} /></span>123456789 <span>Patient Name</span></p>
+                    <p className='pateint-id-title'> <span><FontAwesomeIcon icon={faUser} /></span>{PatientData.patientId} <span>{PatientData.name}</span></p>
                 </div>
             </div>
             <hr/>

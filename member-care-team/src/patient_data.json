@@ -1,0 +1,136 @@
+{
+  "patientId": "123456",
+  "name": "John Doe",
+  "dob": "1980-01-15",
+  "gender": "male",
+  "previousHistory": [
+    {
+      "admitDate": "2024-02-05",
+      "cameFor": "Severe abdominal pain",
+      "diagnosis": "Acute Appendicitis"
+    },
+    {
+      "admitDate": "2024-02-10",
+      "cameFor": "Difficulty in breathing",
+      "diagnosis": "Pneumonia"
+    },
+    {
+      "admitDate": "2024-02-15",
+      "cameFor": "Chest pain and fatigue",
+      "diagnosis": "Myocardial Infarction"
+    }
+  ],
+  "dischargeData":[
+    {
+      "diagnosis": "Acute Appendicitis",
+      "admitDate": "2024-02-05",
+      "dischargeDate": "2024-02-08",
+      "dischargeSummary": "Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics."
+    },
+    {
+      "diagnosis": "Pneumonia",
+      "admitDate": "2024-02-10",
+      "dischargeDate": "2024-02-15",
+      "dischargeSummary": "Completed antibiotic course, responded well to treatment. Follow-up recommended for complete recovery."
+    },
+    {
+      "diagnosis": "Myocardial Infarction",
+      "admitDate": "2024-02-15",
+      "dischargeDate": "2024-02-20",
+      "dischargeSummary": "Received coronary angioplasty. Stable condition upon discharge. Cardiac rehabilitation program advised."
+    }
+  ],
+  "medicationData": [
+    {
+      "medicationName": "Insulin",
+      "dosageDetails": [
+        {"timeOfDay": "Morning", "units": 2},
+        {"timeOfDay": "Afternoon", "units": 3},
+        {"timeOfDay": "Evening", "units": 2}
+      ],
+      "takenDose":[
+        {"Mtaken":"1"},
+        {"Ataken":"2"},
+        {"Ntaken":"0"}
+      ],
+      "totalUnits": 7,
+      "modeOfDose": "Subcutaneous injection"
+    },
+    {
+      "medicationName": "Metformin",
+      "dosageDetails": [
+        {"timeOfDay": "Morning", "units": 1},
+        {"timeOfDay": "Evening", "units": 1}
+      ],
+      "takenDose":[
+        {"Mtaken":"1"},
+        {"Ataken":"-1"},
+        {"Ntaken":"0"}
+      ],
+      "totalUnits": 2,
+      "modeOfDose": "Oral"
+    },
+    {
+      "medicationName": "Aspirin",
+      "dosageDetails": [
+        {"timeOfDay": "Morning", "units": 1},
+        {"timeOfDay": "Evening", "units": 1}
+      ],
+      "totalUnits": 9,
+      "takenDose":[
+        {"Mtaken":"1"},
+        {"Ataken":"1"},
+        {"Ntaken":"1"}
+      ],
+      "modeOfDose": "Oral"
+    },
+    {
+      "medicationName": "Ibuprofen",
+      "dosageDetails": [
+        {"timeOfDay": "Morning", "units": 1},
+        {"timeOfDay": "Evening", "units": 1}
+      ],
+      "totalUnits": 6,
+      "takenDose":[
+        {"Mtaken":"1"},
+        {"Ataken":"1"},
+        {"Ntaken":"2"}
+      ],
+      "modeOfDose": "Oral"
+    },
+    {
+      "medicationName": "Amoxicillin",
+      "dosageDetails": [
+        {"timeOfDay": "Morning", "units": 1},
+        {"timeOfDay": "Evening", "units": 1}
+      ],
+      "totalUnits": 4,
+      "takenDose":[
+        {"Mtaken":"1"},
+        {"Ataken":"-1"},
+        {"Ntaken":"2"}
+      ],
+      "modeOfDose": "Oral"
+    }
+  ],
+  "followupData": [
+    {
+      "followupDate": "2024-02-15",
+      "completed": true,
+      "customerCareInteraction": "Follow-up call to check recovery status. Patient reported feeling much better.",
+      "CustomerCareNo":"9847636289"
+    },
+    {
+      "followupDate": "2024-02-25",
+      "completed": false,
+      "customerCareInteraction": "Attempted follow-up, but patient unavailable. Left voicemail for callback.",
+      "CustomerCareNo":"9847636289"
+    },
+    {
+      "followupDate": "2024-03-05",
+      "completed": true,
+      "customerCareInteraction": "Successful follow-up. Patient confirmed full recovery and expressed satisfaction with care received.",
+      "CustomerCareNo":"9847636289"
+    }
+  ]
+}

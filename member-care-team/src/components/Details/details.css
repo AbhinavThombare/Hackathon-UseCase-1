@@ -15,12 +15,38 @@
     font-size: 25px;
 }
 
+.previous-history-data-div{
+    display: flex;
+    /* margin: 5px; */
+    background-color:bisque;
+    justify-content: center;
+}
+
+.previous-history-data{
+    padding: 5px;
+    margin-right: 5px;
+    width: 35%;
+}
+
 .discharge-summary{
     background-color: #FEEAE6;
     margin: 5px;
     width: 50%;
     border-radius: 5px;
     padding: 10px;
+}
+
+.discharge-summary-data-div{
+    display: flex;
+    /* margin: 5px; */
+    background-color:bisque;
+    justify-content: center;
+}
+
+.discharge-summary-data{
+    padding: 5px;
+    margin-right: 5px;
+    width: 35%;
 }
 
 .discharge-summary-title{

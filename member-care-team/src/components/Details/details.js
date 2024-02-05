@@ -10,25 +10,11 @@ import Paper from '@mui/material/Paper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import PatientData from '../../patient_data.json'
 
 import './details.css'
 
 const Details = () => {
-    const medicineArray = [
-        { id: 1, medicineName: 'ABC1', medicineQuantity: '4' },
-        { id: 2, medicineName: 'ABC2', medicineQuantity: '1' },
-        { id: 3, medicineName: 'ABC3', medicineQuantity: '5' },
-        { id: 4, medicineName: 'ABC4', medicineQuantity: '6' },
-        { id: 5, medicineName: 'ABC5', medicineQuantity: '2' },
-        { id: 6, medicineName: 'ABC6', medicineQuantity: '3' },
-    ]
-
-    const followUpArray = [
-        { id: 1, followUpDate: '02-02-2024', completeStatus: true },
-        { id: 2, followUpDate: '04-02-2024', completeStatus: true },
-        { id: 3, followUpDate: '06-02-2024', completeStatus: false },
-        { id: 4, followUpDate: '08-02-2024', completeStatus: false },
-    ]
 
     return (
         <>
@@ -36,18 +22,32 @@ const Details = () => {
             <div className='details-div'>
                 <div className='summary-data-div'>
                     <div className='previous-history'>
-                        <p  className='previous-history-title'><strong>Previous History</strong></p>
-                        <p> <strong>Date: </strong> 02-02-2024</p>
-                        <p> <strong>Came for: </strong> ABC</p>
-                        <p> <strong>Diagnosis:</strong> ABC</p>
+                        <p className='previous-history-title'><strong>Previous History</strong></p>
+                        <div className='previous-history-data-div'>
+                            {PatientData.previousHistory.map((item, index) => (
+                                <div className='previous-history-data'>
+                                    <p> <strong>Date: </strong>{item.admitDate}</p>
+                                    <p> <strong>Came for: </strong> {item.cameFor}</p>
+                                    <p> <strong>Diagnosis:</strong> {item.diagnosis}</p>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
 
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Discharge Summary</strong></p>
-                        <p> <strong>Diagnosis:</strong> Abc</p>
-                        <p> <strong>Admit Date:</strong> 02-01-2024</p>
-                        <p> <strong>Discharge Date :</strong> 21-01-2024</p>
-                        <p> <strong>Discharge Summary: <br/></strong> Minim ut proident eiusmod pariatur enim sunt qui tempor commodo eu. Laboris laborum id commodo ut minim exercitation in sint enim sunt. Do labore voluptate Lorem nisi non voluptate.</p>
+                        <div className='discharge-summary-data-div'>
+                            {PatientData.dischargeData.map((item, index) => (
+                                <div className='discharge-summary-data'>
+                                    <p> <strong>Diagnosis:</strong> {item.diagnosis}</p>
+                                    <p> <strong>Admit Date:</strong> {item.admitDate}</p>
+                                    <p> <strong>Discharge Date :</strong> {item.dischargeDate}</p>
+                                    <p> <strong>Discharge Summary: <br /></strong> {item.dischargeSummary}</p>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
 
                 </div>
@@ -64,14 +64,14 @@ const Details = () => {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {medicineArray.map((row, index) => (
+                                    {PatientData.medicationData.map((row, index) => (
                                         <TableRow
                                             key={row.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            <TableCell component="th" scope="row">{index+1}</TableCell>
-                                            <TableCell align="right">{row.medicineName}</TableCell>
-                                            <TableCell align="right">{row.medicineQuantity}</TableCell>
+                                            <TableCell component="th" scope="row">{index + 1}</TableCell>
+                                            <TableCell align="right">{row.medicationName}</TableCell>
+                                            <TableCell align="right">{row.totalUnits}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
@@ -91,14 +91,14 @@ const Details = () => {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {followUpArray.map((row, index) => (
+                                    {PatientData.followupData.map((row, index) => (
                                         <TableRow
                                             key={row.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            <TableCell component="th" scope="row">{index}</TableCell>
-                                            <TableCell align="right">{row.followUpDate}</TableCell>
-                                            <TableCell align="right">{(row.completeStatus ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />) }</TableCell>
+                                            <TableCell component="th" scope="row">{index+1}</TableCell>
+                                            <TableCell align="right">{row.followupDate}</TableCell>
+                                            <TableCell align="right">{(row.completed ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />)}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
