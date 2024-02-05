@@ -8,16 +8,17 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Checkbox from '@mui/material/Checkbox';
 
 const MedicineDetials = () => {
 
     const medicineArray = [
-        { id: 1, medicineName: 'ABC1', medicineQuantity: '4', taken:[1,0,0] },
-        { id: 2, medicineName: 'ABC2', medicineQuantity: '1' },
-        { id: 3, medicineName: 'ABC3', medicineQuantity: '5' },
-        { id: 4, medicineName: 'ABC4', medicineQuantity: '6' },
-        { id: 5, medicineName: 'ABC5', medicineQuantity: '2' },
-        { id: 6, medicineName: 'ABC6', medicineQuantity: '3' },
+        { id: 1, medicineName: 'ABC1', medicineQuantity: '4', Mtaken: '1', Ataken: '0', Ntaken: '1' },
+        { id: 2, medicineName: 'ABC2', medicineQuantity: '1', Mtaken: '1', Ataken: '0', Ntaken: '1' },
+        { id: 3, medicineName: 'ABC3', medicineQuantity: '5', Mtaken: '1', Ataken: '2', Ntaken: '1' },
+        { id: 4, medicineName: 'ABC4', medicineQuantity: '6', Mtaken: '1', Ataken: '1', Ntaken: '1' },
+        { id: 5, medicineName: 'ABC5', medicineQuantity: '2', Mtaken: '1', Ataken: '1', Ntaken: '2' },
+        { id: 6, medicineName: 'ABC6', medicineQuantity: '3', Mtaken: '2', Ataken: '0', Ntaken: '1' },
     ]
 
     return (
@@ -46,7 +47,13 @@ const MedicineDetials = () => {
                                         <TableCell component="th" scope="row">{index}</TableCell>
                                         <TableCell align="right">{row.medicineName}</TableCell>
                                         <TableCell align="right">{row.medicineQuantity}</TableCell>
-                                        <TableCell align="right">{}</TableCell>
+                                        <TableCell align="right">
+                                            <div>
+                                                <Checkbox checked={true} color={(row.Mtaken === '1' ? 'success' : row.Mtaken==='2'? 'warning':'error')} />
+                                                <Checkbox checked={true} color={(row.Ataken === '1' ? 'success' : row.Ataken==='2'? 'warning':'error')} />
+                                                <Checkbox checked={true} color={(row.Ntaken === '1' ? 'success' : row.Ntaken==='2'? 'warning':'error')} />
+                                            </div>
+                                        </TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>
