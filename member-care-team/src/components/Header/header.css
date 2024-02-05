@@ -1,0 +1,23 @@
+.header-div{
+    background-color: #0E00B8;
+    color: white;
+}
+
+hr{
+    margin-top: 5px !important;
+    margin-bottom: 0 !important;
+}
+
+.pateint-id-title{
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 12px;
+}
+
+.navbar-expand-lg{
+    padding: 0 !important; 
+}
+
+.nav-link{
+    color: white !important;
+}
