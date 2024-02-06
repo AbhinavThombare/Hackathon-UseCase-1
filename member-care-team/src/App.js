@@ -7,7 +7,7 @@ import MedicineDetials from './components/medicineDetials/medicineDetails';
 import FollowUp from './components/FollowUp/followUp';
 import Notification from './components/Notification/notification';
 import Coupon from './components/coupon/coupon';
-
+import Landing from './components/Landing/Landing';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -34,7 +34,11 @@ const router = createBrowserRouter([
     path:'coupon',
     element: <Coupon/>
   }
-
+  ,
+  {
+    path:'landing',
+    element: <Landing/>
+  }
 ]);
 
 function App() {
