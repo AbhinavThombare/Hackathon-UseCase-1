@@ -1,23 +1,54 @@
-.header-div{
-    background-color: #ffb098;
-    color: #442C2E;
+.header-div {
+    background-color: #fbf9f4;
+    color: #4B4D4F;
 }
 
-hr{
+.icon-tab {
+    font-size: 20px;
+}
+
+hr {
     margin-top: 5px !important;
     margin-bottom: 0 !important;
 }
 
-.pateint-id-title{
+.pateint-id-title {
     padding-top: 5px;
     margin-bottom: 0px;
     padding-left: 12px;
 }
 
-.navbar-expand-lg{
-    padding: 0 !important; 
+.patient-id-div {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-link{
+.navbar-expand-lg {
+    padding: 0 !important;
+}
+
+.nav-link {
     color: #442C2E !important;
+}
+
+.logo-img img {
+    width: 80px;
+    height: 50px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.vl {
+    margin: 10px;
+    border-left: 1.5px solid #4B4D4F;
+    height: 50px;
+}
+
+.user-icon{
+    padding-right: 5px;
 }

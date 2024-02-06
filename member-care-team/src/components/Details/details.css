@@ -1,81 +1,92 @@
-.summary-data-div{
-    display: flex;
-    justify-content: center;
-}
+.summary-data-div {}
 
-.previous-history{
-    background-color: #FEEAE6;
-    margin: 5px;
-    width: 50%;
+.previous-history {
+    background-color: #fbf9f4;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin: 5px; */
+    width: 80%;
     border-radius: 5px;
     padding: 10px;
 }
 
-.previous-history-title{
+.previous-history-title {
+    color: #0C55B8;
     font-size: 25px;
 }
 
-.previous-history-data-div{
-    display: flex;
-    /* margin: 5px; */
-    background-color:bisque;
-    justify-content: center;
+.previous-history-data-div {
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 60%; */
+}
+.tableHead{
+    font-size: 15px !important;
+    font-weight: 900 !important;
 }
 
-.previous-history-data{
+.previous-history-data {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.discharge-summary {
+    background-color: #fbf9f4;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.discharge-summary-data-div {
+    
+}
+
+.discharge-summary-data {
     padding: 5px;
     margin-right: 5px;
     width: 35%;
 }
 
-.discharge-summary{
-    background-color: #FEEAE6;
-    margin: 5px;
-    width: 50%;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.discharge-summary-data-div{
-    display: flex;
-    /* margin: 5px; */
-    background-color:bisque;
-    justify-content: center;
-}
-
-.discharge-summary-data{
-    padding: 5px;
-    margin-right: 5px;
-    width: 35%;
-}
-
-.discharge-summary-title{
+.discharge-summary-title {
+    color: #0C55B8;
     font-size: 25px;
 }
 
-.table-data-div{
-    display: flex;
-    justify-content: center;
-}
 
-.medicine-prescribed{
-    width: 50%;
-    margin: 5px;
+.medicine-prescribed {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    background-color: #fff6f5;
+    background-color: #fbf9f4;
 }
 
-.medicine-prescribed-title{
+.medicine-prescribed-title {
+    color: #0C55B8;
     font-size: 25px;
 }
 
-.followUp-div{
-    width: 50%;
-    margin: 5px;
+.followUp-div {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    background-color: #fff6f5;
+    background-color: #fbf9f4;
 }
 
-.followUp-title{
+.followUp-title {
+    color: #0C55B8;
     font-size: 25px;
 }

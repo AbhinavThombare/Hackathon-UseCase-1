@@ -16,14 +16,6 @@ import PatientData from '../../patient_data.json'
 
 
 const FollowUp=()=>{
-
-    const rows = [
-        { id: 1, FollowUpDate:new Date().toLocaleDateString(), completed: true,customerCare:'+91 2672648723' },
-        { id: 2, FollowUpDate: new Date().toLocaleDateString(), completed: true,customerCare:'+91 2672648723' },
-        { id: 3, FollowUpDate: new Date().toLocaleDateString(), completed: true,customerCare:'+91 2672648723' },
-        { id: 4, FollowUpDate: new Date().toLocaleDateString(), completed: false,customerCare:'+91 2672648723' },
-        
-    ]
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {

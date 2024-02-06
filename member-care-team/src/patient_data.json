@@ -43,6 +43,7 @@
   "medicationData": [
     {
       "medicationName": "Insulin",
+      "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 2},
         {"timeOfDay": "Afternoon", "units": 3},
@@ -53,11 +54,12 @@
         {"Ataken":"2"},
         {"Ntaken":"0"}
       ],
-      "totalUnits": 7,
+      "totalUnits": 2,
       "modeOfDose": "Subcutaneous injection"
     },
     {
       "medicationName": "Metformin",
+      "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
@@ -72,6 +74,7 @@
     },
     {
       "medicationName": "Aspirin",
+      "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
@@ -86,6 +89,7 @@
     },
     {
       "medicationName": "Ibuprofen",
+      "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
@@ -100,6 +104,7 @@
     },
     {
       "medicationName": "Amoxicillin",
+      "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
