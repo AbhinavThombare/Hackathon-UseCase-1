@@ -31,9 +31,12 @@ const Details = () => {
                                     <Table sx={{ minWidth: 150 }} aria-label="simple table">
                                         <TableHead>
                                             <TableRow>
-                                                <TableCell className='tableHead'>No.</TableCell>
-                                                <TableCell className='tableHead' align="right">Date</TableCell>
+                                                <TableCell className='tableHead'>S.No</TableCell>
+                                                <TableCell className='tableHead' align='right'> Department</TableCell>
+                                                <TableCell className='tableHead' align='right'> Doctor</TableCell>
+                                                <TableCell className='tableHead' align="right">Appointment Date</TableCell>
                                                 <TableCell className='tableHead' align="right">Symptoms</TableCell>
+                                                <TableCell className='tableHead' align="right">Details</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -43,8 +46,90 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
+                                                    <TableCell align="right">Internal Medicine</TableCell>
+                                                    <TableCell align="right">ABC</TableCell>
                                                     <TableCell align="right">{row.admitDate}</TableCell>
                                                     <TableCell align="right">{row.diagnosis}</TableCell>
+                                                    <TableCell align="right"><a href="#">View Summary</a></TableCell>
+                                                </TableRow>
+                                            ))}
+                                        </TableBody>
+                                    </Table>
+                                </TableContainer>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='discharge-summary'>
+                        <p className='discharge-summary-title'><strong>Patient Condition before Admission</strong></p>
+                        <div className='discharge-summary-data-div'>
+                            <p>Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics.</p>
+                        </div>
+
+                    </div>
+
+                    <div className='discharge-summary'>
+                        <p className='discharge-summary-title'><strong>Diagnosis Details</strong></p>
+                        <div className='discharge-summary-data-div'>
+                            <div>
+                                <TableContainer component={Paper}>
+                                    <Table sx={{ minWidth: 150 }} aria-label="simple table">
+                                        <TableHead>
+                                            <TableRow>
+                                                <TableCell className='tableHead'>No.</TableCell>
+                                                <TableCell className='tableHead' align='right'>Diagnosis</TableCell>
+                                                <TableCell className='tableHead' align="right">Admit Date</TableCell>
+                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align="right">Discharge Summary</TableCell>
+                                            </TableRow>
+                                        </TableHead>
+                                        <TableBody>
+                                            {PatientData.dischargeData.map((row, index) => (
+                                                <TableRow
+                                                    key={row.id}
+                                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                                >
+                                                    <TableCell component="th" scope="row">{index + 1}</TableCell>
+                                                    <TableCell>{row.diagnosis}</TableCell>
+                                                    <TableCell align="right">{row.admitDate}</TableCell>
+                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    <TableCell>{row.dischargeSummary}</TableCell>
+                                                </TableRow>
+                                            ))}
+                                        </TableBody>
+                                    </Table>
+                                </TableContainer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='discharge-summary'>
+                        <p className='discharge-summary-title'><strong>Patient Summary</strong></p>
+                        <div className='discharge-summary-data-div'>
+                            <div>
+                                <TableContainer component={Paper}>
+                                    <Table sx={{ minWidth: 150 }} aria-label="simple table">
+                                        <TableHead>
+                                            <TableRow>
+                                                <TableCell className='tableHead'>Patient Name</TableCell>
+                                                <TableCell className='tableHead' align="right">Admission Date</TableCell>
+                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align='right'>Initial Complent</TableCell>
+                                                
+                                            </TableRow>
+                                        </TableHead>
+                                        <TableBody>
+                                            {PatientData.dischargeData.map((row, index) => (
+                                                <TableRow
+                                                    key={row.id}
+                                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                                >
+                                                    <TableCell component="th" scope="row">{index + 1}</TableCell>
+                                                    <TableCell>{row.diagnosis}</TableCell>
+                                                    <TableCell align="right">{row.admitDate}</TableCell>
+                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    {/* <TableCell>Abhianv</TableCell> */}
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -58,38 +143,12 @@ const Details = () => {
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Discharge Summary</strong></p>
                         <div className='discharge-summary-data-div'>
-                            <div>
-                                <TableContainer component={Paper}>
-                                    <Table sx={{ minWidth: 150 }} aria-label="simple table">
-                                        <TableHead>
-                                            <TableRow>
-                                                <TableCell className='tableHead'>No.</TableCell>
-                                                <TableCell className='tableHead' align="right">Diagnosis</TableCell>
-                                                <TableCell className='tableHead' align="right">Admit Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Summary</TableCell>
-                                            </TableRow>
-                                        </TableHead>
-                                        <TableBody>
-                                            {PatientData.dischargeData.map((row, index) => (
-                                                <TableRow
-                                                    key={row.id}
-                                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                                >
-                                                    <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell align="right">{row.diagnosis}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeSummary}</TableCell>
-                                                </TableRow>
-                                            ))}
-                                        </TableBody>
-                                    </Table>
-                                </TableContainer>
-                            </div>
+                            <p>Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics.</p>
                         </div>
 
                     </div>
+                    
+                    
 
                 </div>
                 <div className='table-data-div'>
@@ -102,7 +161,7 @@ const Details = () => {
                                         <TableCell className='tableHead'>No.</TableCell>
                                         <TableCell className='tableHead' align="right">Medicine Name</TableCell>
                                         <TableCell className='tableHead' align="right">Units</TableCell>
-                                        <TableCell className='tableHead' align="right">Dose (in Day)</TableCell>
+                                        <TableCell className='tableHead' align="right">Days</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>

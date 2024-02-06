@@ -44,9 +44,9 @@ const FollowUp=()=>{
                                 <TableRow >
                                     <TableCell className="head">No.</TableCell>
                                     <TableCell className="head" align="right">FollowUp Date</TableCell>
-                                    <TableCell className="head" align="center">Patient Status</TableCell>
-                                    <TableCell className="head" align="right">Customer Care</TableCell>
-                                    <TableCell className="head" align="right">Completed</TableCell>
+                                    <TableCell className="head" align="center">Patient Condition</TableCell>
+                                    <TableCell className="head" align="right">Supervisor Name</TableCell>
+                                    <TableCell className="head" align="right">Status</TableCell>
 
                                     
 
@@ -67,8 +67,8 @@ const FollowUp=()=>{
                                         <TableCell align="right">
                                         <div>
                                                 <Checkbox checked={true} color={(row.completed?'success':'warning')} />
-                                                <Checkbox checked={true} color={(row.completed?'success':'warning')} />
-                                                <Checkbox checked={true} color={(row.completed?'success':'warning')} />
+                                                <Checkbox className='checkbox-yellow' color='warning' />
+                                                <Checkbox  color={(row.completed?'error':'warning')} />
                                                
                                             </div>
     
