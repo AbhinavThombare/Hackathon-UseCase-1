@@ -38,23 +38,23 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className='nav-link' to='/detials'><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br /> Medical Summary</Link>
                             </li>
-                            {/* <span className='vl'></span> */}
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/followup'><span className='icon-tab'><FontAwesomeIcon icon={faCalendarDays} /></span><br />Follow Up</Link>
                             </li>
-                            {/* <span className='vl'></span> */}
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/medicine'><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />Medicine Schedule</Link>
                             </li>
-                            {/* <span className='vl'></span> */}
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/notification'><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />Reminder / Notification</Link>
                             </li>
-                            {/* <span className='vl'></span> */}
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/coupon'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Coupons - Offers/Promo Code</Link>
                             </li>
-                            {/* <span className='vl'></span> */}
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <Link className='nav-link' to='/landing'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Dashboard - Overall Satisfaction</Link>
                             </li>
