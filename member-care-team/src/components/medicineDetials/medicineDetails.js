@@ -14,14 +14,7 @@ import PatientData from '../../patient_data.json'
 
 const MedicineDetials = () => {
 
-    const medicineArray = [
-        { id: 1, medicineName: 'ABC1', medicineQuantity: '4', Mtaken: '1', Ataken: '0', Ntaken: '1' },
-        { id: 2, medicineName: 'ABC2', medicineQuantity: '1', Mtaken: '1', Ataken: '0', Ntaken: '1' },
-        { id: 3, medicineName: 'ABC3', medicineQuantity: '5', Mtaken: '1', Ataken: '2', Ntaken: '1' },
-        { id: 4, medicineName: 'ABC4', medicineQuantity: '6', Mtaken: '1', Ataken: '1', Ntaken: '1' },
-        { id: 5, medicineName: 'ABC5', medicineQuantity: '2', Mtaken: '1', Ataken: '1', Ntaken: '2' },
-        { id: 6, medicineName: 'ABC6', medicineQuantity: '3', Mtaken: '2', Ataken: '0', Ntaken: '1' },
-    ]
+   
 
     return (
         <>
