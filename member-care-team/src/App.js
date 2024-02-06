@@ -1,5 +1,4 @@
 import './App.css';
-import Home from './components/home/Home';
 import { createBrowserRouter,Routes,Route,BrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Details from './components/Details/details';
@@ -18,7 +17,7 @@ const App = () => {
     <Header/>
     <Routes>
       <Route path="/" element={<Details/>}/>
-      <Route path="/details" element={<Details/>}/>
+      <Route path="/detials" element={<Details/>}/>
       <Route path="/medicine" element={<MedicineDetials/>}/>
       <Route path="/followup" element={<FollowUp/>}/>
       <Route path="/notification" element={<Notification/>}/>
