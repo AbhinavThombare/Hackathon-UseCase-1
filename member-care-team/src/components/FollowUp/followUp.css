@@ -7,8 +7,12 @@
     padding: 10px;
 }
 
-.patient-title{
+.follow-up-title{
     font-size: 25px;
+}
+
+.patient-title{
+    font-size: 20px;
     
 }
 .patient-title strong{

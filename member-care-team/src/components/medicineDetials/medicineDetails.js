@@ -64,9 +64,9 @@ const MedicineDetials = () => {
                                         <TableCell align="right">{row.modeOfDose}</TableCell>
                                         <TableCell align="right">
                                             <div>
-                                                <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[0].Mtaken === '-1' ? true : false)} />
-                                                <Checkbox checked={true} color={(row.takenDose[1].Ataken === '1' ? 'success' : row.takenDose[1].Ataken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[1].Ataken === '-1' ? true : false)}/>
-                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[2].Ntaken === '-1' ? true : false)}/>
+                                                <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')}  />
+                                                <Checkbox checked={true} color={(row.takenDose[1].Ataken === '1' ? 'success' : row.takenDose[1].Ataken === '2' ? 'warning' : 'error')} />
+                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} />
                                             </div>
                                         </TableCell>
                                     </TableRow>

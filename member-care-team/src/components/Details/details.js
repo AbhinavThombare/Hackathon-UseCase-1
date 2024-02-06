@@ -44,8 +44,8 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell align="right">Internal Medicine</TableCell>
-                                                    <TableCell align="right">ABC</TableCell>
+                                                    <TableCell align="right">{row.department}</TableCell>
+                                                    <TableCell align="right">{row.doctor}</TableCell>
                                                     <TableCell align="right">{row.admitDate}</TableCell>
                                                     <TableCell align="right">{row.diagnosis}</TableCell>
                                                     <TableCell align="right"><a href="#">View Summary</a></TableCell>
@@ -62,7 +62,7 @@ const Details = () => {
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Patient Condition before Admission</strong></p>
                         <div className='discharge-summary-data-div'>
-                            <p>Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics.</p>
+                            <p>{PatientData.patientSummaryBeforeAdmission}</p>
                         </div>
 
                     </div>

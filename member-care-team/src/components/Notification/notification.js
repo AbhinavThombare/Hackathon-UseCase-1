@@ -24,7 +24,7 @@ const Notification = () => {
             <Header />
             <div className='notification-table-div'>
                 <div className='medicine-div'>
-                    <p className='medicine-title'><strong>Given Medicine</strong></p>
+                    <p className='medicine-title'><strong>Remainder / Notification</strong></p>
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>

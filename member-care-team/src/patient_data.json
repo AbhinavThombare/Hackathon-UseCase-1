@@ -7,17 +7,23 @@
     {
       "admitDate": "2024-02-05",
       "cameFor": "Severe abdominal pain",
-      "diagnosis": "Acute Appendicitis"
+      "diagnosis": "Acute Appendicitis",
+      "department":"Internal Medicine",
+      "doctor":"Dr. Emily Smith"
     },
     {
       "admitDate": "2024-02-10",
       "cameFor": "Difficulty in breathing",
-      "diagnosis": "Pneumonia"
+      "diagnosis": "Pneumonia",
+      "department":"Internal Medicine",
+      "doctor":"Dr. Michel Johnson"
     },
     {
       "admitDate": "2024-02-15",
       "cameFor": "Chest pain and fatigue",
-      "diagnosis": "Myocardial Infarction"
+      "diagnosis": "Myocardial Infarction",
+      "department":"Internal Medicine",
+      "doctor":"Dr. Emily Smith"
     }
   ],
   "dischargeData": [
@@ -28,6 +34,7 @@
       "dischargeSummary": "Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics."
     }
   ],
+  "patientSummaryBeforeAdmission":"The patient with type 2 diabetes, presents symptoms including polyuria, polydipsia, and uncontrolled blood sugar levels despite medication. Admission is sought for further evaluation and management of associated complications",
   "medicationData": [
     {
       "date": "2024-02-06",
@@ -49,13 +56,13 @@
       ],
       "takenDose": [
         {
-          "Mtaken": "0"
+          "Mtaken": "1"
         },
         {
-          "Ataken": "2"
+          "Ataken": "1"
         },
         {
-          "Ntaken": "0"
+          "Ntaken": "1"
         }
       ],
       "totalUnits": "2 times a day",
@@ -77,13 +84,13 @@
       ],
       "takenDose": [
         {
-          "Mtaken": "2"
+          "Mtaken": "1"
         },
         {
-          "Ataken": "-1"
+          "Ataken": "1"
         },
         {
-          "Ntaken": "0"
+          "Ntaken": "2"
         }
       ],
       "totalUnits": "2 times a day",
@@ -106,13 +113,13 @@
       "totalUnits": "1 times a day",
       "takenDose": [
         {
-          "Mtaken": "-1"
+          "Mtaken": "2"
         },
         {
-          "Ataken": "-1"
+          "Ataken": "1"
         },
         {
-          "Ntaken": "-1"
+          "Ntaken": "2"
         }
       ],
       "modeOfDose": "Oral"
@@ -133,13 +140,13 @@
       "totalUnits": "6 times a day",
       "takenDose": [
         {
-          "Mtaken": "-1"
+          "Mtaken": "0"
         },
         {
-          "Ataken": "-1"
+          "Ataken": "0"
         },
         {
-          "Ntaken": "2"
+          "Ntaken": "0"
         }
       ],
       "modeOfDose": "Oral"
@@ -166,7 +173,7 @@
           "Ataken": "-1"
         },
         {
-          "Ntaken": "0"
+          "Ntaken": "1"
         }
       ],
       "modeOfDose": "Oral"
