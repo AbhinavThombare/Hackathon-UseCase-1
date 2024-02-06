@@ -8,13 +8,14 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Header from '../Header/header';
+import CallIcon from '@mui/icons-material/Call';
+import MessageIcon from '@mui/icons-material/Message';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import CancelIcon from '@mui/icons-material/Cancel';
+import PatientData from '../../patient_data.json'
 
 const Notification = () => {
-
-    const notificationArray = [
-        { email: 'jay07@gmail.com', supervisiorPhoneCall: '8877887789-Abhishek', feedBackCall: '8765679089', followUpCall: '8789987899' },
-    ];
-
     const handleClick = () => {
         alert('Remainder Send')
     }
@@ -23,38 +24,39 @@ const Notification = () => {
         <>
             <Header />
             <div className='notification-table-div'>
-                <div className='medicine-div'>
-                    <p className='medicine-title'><strong>Given Medicine</strong></p>
+                <div className='notification-div'>
+                    <p className='notification-title'><strong>Notification  </strong></p>
                     <TableContainer component={Paper}>
-                        <Table sx={{ minWidth: 350 }} aria-label="simple table">
+                        <Table aria-label="simple table">
                             <TableHead>
                                 <TableRow>
                                     <TableCell>No.</TableCell>
-                                    <TableCell align="right">Dates</TableCell>
-                                    <TableCell align="right">Supervisior Name</TableCell>
+                                    <TableCell align="center">Dates</TableCell>
+                                    <TableCell align="center">Supervisior</TableCell>
                                     <TableCell align="center">Purpose</TableCell>
-                                    <TableCell align="right">Notification Type</TableCell>
-                                    <TableCell align="right">Status</TableCell>
+                                    <TableCell align="center">Notification Type</TableCell>
+                                    <TableCell align="center">Feedback Call</TableCell>
+                                    <TableCell align="center">Status</TableCell>
 
                                 </TableRow>
                             </TableHead>
                             <TableBody>
-                                {notificationArray.map((row, index) => (
+                                {PatientData.NotificationData.map((row, index) => (
                                     <TableRow
                                         key={row.id}
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
                                         <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                        <TableCell align="right">2024-02-10</TableCell>
-                                        <TableCell align="right">Abhinav</TableCell>
-                                        <TableCell align="right">
-                                            <p>Medicine Remainder</p>
-                                            {/* <TableCell align="right">Morning Remainder  <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
-                                            <TableCell align="right">Afternoon Remainder <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
-                                            <TableCell align="right">Night Remainder <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell> */}
+                                        <TableCell align="center">{row.Dates}</TableCell>
+                                        <TableCell align="center">{row.SupervisiorName}</TableCell>
+                                        <TableCell align="center">{row.Purpose}</TableCell>
+                                        <TableCell align="center">
+                                            <CallIcon className='icon-style'   onClick={handleClick} /><br/>
+                                            <br/> <MessageIcon className='icon-style'   onClick={handleClick} /> <br/>
+                                            <br/> <NotificationsActiveIcon className='icon-style'   onClick={handleClick} />
                                         </TableCell>
-                                        <TableCell align="right">SMS <br/> Notification <br/>Phone Call </TableCell>
-                                        <TableCell align="right">checkbox </TableCell>
+                                        <TableCell align="center">{row.FeedbackCall}</TableCell>
+                                        <TableCell align="center"> {row.check ?<CheckBoxIcon className='check-box-style'/>: <CancelIcon className="cancel-icon-style"/>}</TableCell>
 
                                     </TableRow>
                                 ))}
