@@ -204,32 +204,32 @@
   "Coupons": [
     {
       "testName": "CBC",
-      "price": 1000,
-      "discount": 10,
+      "offer": "PHARMA1000",
+      "discount": 20,
       "afterDiscount": 900
     },
     {
       "testName": "CT Scan",
-      "price": 2000,
+      "offer": "PHARMA2000",
       "discount": 10,
       "afterDiscount": 1800
     },
     {
       "testName": "ElectoCardioGram",
-      "price": 800,
-      "discount": 10,
+      "offer": "PHARMA1500",
+      "discount": 15,
       "afterDiscount": 720
     },
     {
       "testName": "Endoscopy",
-      "price": 4000,
+      "offer": "PHARMA3000",
       "discount": 10,
       "afterDiscount": 3600
     },
     {
       "testName": "Biopsy",
-      "price": 7000,
-      "discount": 10,
+      "offer": "PHARMA1000",
+      "discount": 20,
       "afterDiscount": 6300
     }
   ],"NotificationData":[

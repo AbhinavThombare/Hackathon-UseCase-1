@@ -43,8 +43,8 @@ const Coupon = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
                                             <TableCell component="th" scope="row">{row.testName}</TableCell>
-                                            <TableCell align="right">PHARMA100</TableCell>
-                                            <TableCell align="right">10%</TableCell>
+                                            <TableCell align="right">{row.offer}</TableCell>
+                                            <TableCell align="right">{row.discount}%</TableCell>
                                             <TableCell align="right"><button className='btn btn-success' onClick={handleRedeem}>Redeem</button></TableCell>
                                         </TableRow>
                                     ))}

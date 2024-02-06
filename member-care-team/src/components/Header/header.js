@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Link , NavLink, useNavigate} from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faBell, faCalendarDays, faCircleInfo, faCircleUser, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -10,19 +10,17 @@ import PatientData from '../../patient_data.json'
 import './header.css'
 
 const Header = () => {
-    const [highlight, setHighlight] = useState('medicleSUmmary');
+    const [highlight, setHighlight] = useState(null);
 
-    
     const navigate = useNavigate();
 
-    const handleHighlight = (item) =>{
+    const handleHighlight = (item) => {
         setHighlight(item)
-        console.log(item)
     }
     const navigateToContacts = () => {
         // 👇️ navigate to /contacts
         navigate('/');
-      };
+    };
     return (
         <div className='header-div'>
             <div className='patient-id-div'>
