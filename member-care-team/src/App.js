@@ -11,7 +11,7 @@ import Landing from './components/Landing/Landing';
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Home/>,
+    element:<Details/>,
     id:'root'
   },
   {

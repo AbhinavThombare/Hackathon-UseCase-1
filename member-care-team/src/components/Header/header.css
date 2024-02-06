@@ -60,4 +60,6 @@ hr {
 
 .active{
     background-color: orange !important;
+    border-radius: 5px;
+    margin: 5px;
 }
