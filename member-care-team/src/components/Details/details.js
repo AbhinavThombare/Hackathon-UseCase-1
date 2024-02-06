@@ -46,8 +46,8 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell align="center">Internal Medicine</TableCell>
-                                                    <TableCell align="center">ABC</TableCell>
+                                                    <TableCell align="center">{row.department}</TableCell>
+                                                    <TableCell align="center">{row.doctor}</TableCell>
                                                     <TableCell align="center">{row.admitDate}</TableCell>
                                                     <TableCell align="center">{row.diagnosis}</TableCell>
                                                     <TableCell align="center"><a href="#">View Summary</a></TableCell>
@@ -77,11 +77,9 @@ const Details = () => {
                                     <Table sx={{ minWidth: 150 }} aria-label="simple table">
                                         <TableHead>
                                             <TableRow>
-                                                <TableCell className='tableHead'>S.No.</TableCell>
-                                                <TableCell className='tableHead' align='center'>Diagnosis</TableCell>
-                                                <TableCell className='tableHead' align="center">Admit Date</TableCell>
-                                                <TableCell className='tableHead' align="center">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align="center">Discharge Summary</TableCell>
+                                                <TableCell className='tableHead' width="10%">S.No.</TableCell>
+                                                <TableCell className='tableHead' align='center' width="20%">Problem</TableCell>
+                                                <TableCell className='tableHead' align="center" width="70%">Problem Summary</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -91,10 +89,8 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell>{row.diagnosis}</TableCell>
-                                                    <TableCell align="center">{row.admitDate}</TableCell>
-                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
-                                                    <TableCell>{row.dischargeSummary}</TableCell>
+                                                    <TableCell align='center'>{row.diagnosis}</TableCell>
+                                                    <TableCell>{row.problemSummary}</TableCell>
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -113,7 +109,7 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>Patient Name</TableCell>
-                                                <TableCell className='tableHead' align="center">Admission Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Diagnosis</TableCell>
                                                 <TableCell className='tableHead' align="center">Discharge Date</TableCell>
                                                 <TableCell className='tableHead' align='center'>Initial Complaint</TableCell>
                                                 
@@ -128,7 +124,7 @@ const Details = () => {
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
                                                     <TableCell align="center">{row.diagnosis}</TableCell>
                                                     <TableCell align="center">{row.admitDate}</TableCell>
-                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
+                                                    <TableCell align="center">{row.initalComplaint}</TableCell>
                                                     {/* <TableCell>Abhianv</TableCell> */}
                                                 </TableRow>
                                             ))}
@@ -143,7 +139,7 @@ const Details = () => {
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Discharge Summary</strong></p>
                         <div className='discharge-summary-data-div'>
-                            <p>Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics.</p>
+                            <p>{PatientData.dischargeData[0].dischargeSummary}</p>
                         </div>
 
                     </div>

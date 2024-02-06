@@ -31,10 +31,12 @@
       "diagnosis": "Acute Appendicitis",
       "admitDate": "2024-02-05",
       "dischargeDate": "2024-02-08",
-      "dischargeSummary": "Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics."
+      "initalComplaint" : "Sudden pain that begins on the right side of the lower abdomen",
+      "problemSummary" :"Appendicitis is an inflammation of the appendix. The appendix is a finger-shaped pouch that sticks out from the colon on the lower right side of the belly, also called the abdomen. ",
+      "dischargeSummary": "Following successful emergency appendectomy for acute appendicitis, the patient’s postoperative course was uneventful. Prescribed antibiotics and pain management ensure continued recovery. The pathology report confirms the diagnosis, and the patient is scheduled for a follow-up to monitor healing and address any concerns. Clear postoperative directives guide the path to a healthy convalescence."
     }
   ],
-  "patientSummaryBeforeAdmission":"The patient with type 2 diabetes, presents symptoms including polyuria, polydipsia, and uncontrolled blood sugar levels despite medication. Admission is sought for further evaluation and management of associated complications",
+  "patientSummaryBeforeAdmission":"The patient with severe abdominal pain, nausea, vomiting, and fever, often localized to the lower right abdomen,",
   "medicationData": [
     {
       "date": "2024-02-06",

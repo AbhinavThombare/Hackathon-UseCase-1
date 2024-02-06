@@ -1,6 +1,6 @@
 .medicine-table-div{
     margin: 10px;
-    background-color: #FEEAE6;
+    background-color: #fbf9f4;
 }
 
 .medicine-div{
@@ -9,7 +9,12 @@
 
 .patient-title{
     color: #0C55B8;
+    font-size: 20px;
+}
+
+.follow-up-title{
     font-size: 25px;
+    color: #0C55B8;
 }
 
 .patient-title{
@@ -25,8 +30,8 @@
     text-align: center;
 }
 .head{
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.87);
+    font-weight: 900 !important;
+    color: rgba(0, 0, 0, 0.87) !important;
 }
 .tick{
     background-color: green;

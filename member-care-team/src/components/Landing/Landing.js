@@ -9,7 +9,7 @@ const Landing=()=>{
         <Header/>
         <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Overall Satisfaction</strong></p>
-                        <div className='discharge-summary-data-div'>
+                        <div className='discharge-summary-data-div-1'>
                             <PieChartWithCustomizedLabel/>
                         </div>
 
