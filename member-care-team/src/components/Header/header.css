@@ -39,8 +39,13 @@ hr {
     height: 50px;
 }
 
+.logo-img img:hover {
+    cursor: pointer;
+}
+
 .nav-item {
     text-align: center;
+    color:#595959;
 }
 
 .vl {
@@ -51,4 +56,8 @@ hr {
 
 .user-icon{
     padding-right: 5px;
+}
+
+.active{
+    background-color: orange !important;
 }

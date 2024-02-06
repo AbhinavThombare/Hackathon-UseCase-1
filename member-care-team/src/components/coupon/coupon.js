@@ -32,6 +32,7 @@ const Coupon = () => {
                                         <TableCell className='tableHead' align="right">Offer / Promo Code</TableCell>
                                         <TableCell className='tableHead' align="right">Discount</TableCell>
                                         <TableCell className='tableHead' align="right">Action</TableCell>
+                                        <TableCell className='tableHead' align="right">Eligibility</TableCell>
 
                                     </TableRow>
                                 </TableHead>

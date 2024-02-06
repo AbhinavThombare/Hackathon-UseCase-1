@@ -10,6 +10,8 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Checkbox from '@mui/material/Checkbox';
 import PatientData from '../../patient_data.json'
+import SelectVariants from './datelist';
+
 
 
 const MedicineDetials = () => {
@@ -26,15 +28,7 @@ const MedicineDetials = () => {
     return (
         <>
             <Header />
-            <div className='date-dropdown'>
-               <label htmlFor='dateSelect'>Select a Date: </label>
-               <select id='dateSelect' onChange={handleDateClick}>
-                <option value="" disabled selected>Select Date</option>
-                {PatientData.medicationData.map((date)=>(
-                    <option key={date} value={date}>{date.date}</option>
-                ))}
-               </select>
-            </div>
+            <SelectVariants/>
             <div className='medicine-table-div'>
                 <div className='medicine-div'>
                     <p className='medicine-title'><strong>Medicine Schedule</strong></p>
@@ -42,7 +36,7 @@ const MedicineDetials = () => {
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
                                 <TableRow >
-                                    <TableCell className="head">No.</TableCell>
+                                    <TableCell className="head">S.No.</TableCell>
                                     <TableCell className="head" align="right">Medicine Name</TableCell>
                                     <TableCell className="head" align="right">Date</TableCell>
                                     <TableCell className="head"align="right">Mode Of Dose</TableCell>
@@ -64,9 +58,9 @@ const MedicineDetials = () => {
                                         <TableCell align="right">{row.modeOfDose}</TableCell>
                                         <TableCell align="right">
                                             <div>
-                                                <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[0].Mtaken === '-1' ? true : false)} />
-                                                <Checkbox checked={true} color={(row.takenDose[1].Ataken === '1' ? 'success' : row.takenDose[1].Ataken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[1].Ataken === '-1' ? true : false)}/>
-                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} disabled={(row.takenDose[2].Ntaken === '-1' ? true : false)}/>
+                                                <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')}  />
+                                                <Checkbox checked={true} color={(row.takenDose[1].Ataken === '1' ? 'success' : row.takenDose[1].Ataken === '2' ? 'warning' : 'error')} />
+                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} />
                                             </div>
                                         </TableCell>
                                     </TableRow>

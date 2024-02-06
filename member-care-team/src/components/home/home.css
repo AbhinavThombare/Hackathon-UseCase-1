@@ -1,0 +1,30 @@
+.main-heading {
+    /* background-color: grey; */
+    min-height: 400px;
+    display: flex;
+}
+
+.left-heading {
+    /* background-color: red; */
+    /* min-height: 500px; */
+    /* line-height: 500px; */
+    width: 50%;
+    text-align: center;
+}
+
+.right-heading {
+    /* background-color: green; */
+    /* min-height: 500px; */
+    /* line-height: 500px; */
+    width: 50%;
+    text-align: center;
+}
+
+.elementor-heading-title .elementor-size-default{
+    color: #002677;
+    font-family: "OptumSans", Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 52px;
+}

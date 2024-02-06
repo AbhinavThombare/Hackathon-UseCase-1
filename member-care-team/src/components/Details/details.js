@@ -14,7 +14,7 @@ import PatientData from '../../patient_data.json'
 
 
 import './details.css'
-import PieChartWithCustomizedLabel from './Piechart/piechart';
+import PieChartWithCustomizedLabel from '../Landing/Piechart/piechart';
 
 const Details = () => {
 
@@ -32,11 +32,11 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>S.No</TableCell>
-                                                <TableCell className='tableHead' align='right'> Department</TableCell>
-                                                <TableCell className='tableHead' align='right'> Doctor</TableCell>
-                                                <TableCell className='tableHead' align="right">Appointment Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Symptoms</TableCell>
-                                                <TableCell className='tableHead' align="right">Details</TableCell>
+                                                <TableCell className='tableHead' align='center'> Department</TableCell>
+                                                <TableCell className='tableHead' align='center'> Doctor</TableCell>
+                                                <TableCell className='tableHead' align="center">Appointment Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Symptoms</TableCell>
+                                                <TableCell className='tableHead' align="center">Details</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -46,11 +46,11 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell align="right">Internal Medicine</TableCell>
-                                                    <TableCell align="right">ABC</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.diagnosis}</TableCell>
-                                                    <TableCell align="right"><a href="#">View Summary</a></TableCell>
+                                                    <TableCell align="center">Internal Medicine</TableCell>
+                                                    <TableCell align="center">ABC</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.diagnosis}</TableCell>
+                                                    <TableCell align="center"><a href="#">View Summary</a></TableCell>
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -64,7 +64,7 @@ const Details = () => {
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Patient Condition before Admission</strong></p>
                         <div className='discharge-summary-data-div'>
-                            <p>Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics.</p>
+                            <p>{PatientData.patientSummaryBeforeAdmission}</p>
                         </div>
 
                     </div>
@@ -77,11 +77,11 @@ const Details = () => {
                                     <Table sx={{ minWidth: 150 }} aria-label="simple table">
                                         <TableHead>
                                             <TableRow>
-                                                <TableCell className='tableHead'>No.</TableCell>
-                                                <TableCell className='tableHead' align='right'>Diagnosis</TableCell>
-                                                <TableCell className='tableHead' align="right">Admit Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Summary</TableCell>
+                                                <TableCell className='tableHead'>S.No.</TableCell>
+                                                <TableCell className='tableHead' align='center'>Diagnosis</TableCell>
+                                                <TableCell className='tableHead' align="center">Admit Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Summary</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -92,8 +92,8 @@ const Details = () => {
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
                                                     <TableCell>{row.diagnosis}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
                                                     <TableCell>{row.dischargeSummary}</TableCell>
                                                 </TableRow>
                                             ))}
@@ -113,9 +113,9 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>Patient Name</TableCell>
-                                                <TableCell className='tableHead' align="right">Admission Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align='right'>Initial Complent</TableCell>
+                                                <TableCell className='tableHead' align="center">Admission Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align='center'>Initial Complaint</TableCell>
                                                 
                                             </TableRow>
                                         </TableHead>
@@ -126,9 +126,9 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell>{row.diagnosis}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    <TableCell align="center">{row.diagnosis}</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
                                                     {/* <TableCell>Abhianv</TableCell> */}
                                                 </TableRow>
                                             ))}
@@ -158,10 +158,10 @@ const Details = () => {
                             <Table sx={{ minWidth: 350 }} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell className='tableHead'>No.</TableCell>
-                                        <TableCell className='tableHead' align="right">Medicine Name</TableCell>
-                                        <TableCell className='tableHead' align="right">Units</TableCell>
-                                        <TableCell className='tableHead' align="right">Days</TableCell>
+                                        <TableCell className='tableHead'>S.No.</TableCell>
+                                        <TableCell className='tableHead' align="center">Medicine Name</TableCell>
+                                        <TableCell className='tableHead' align="center">Units</TableCell>
+                                        <TableCell className='tableHead' align="center">Days</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -171,9 +171,9 @@ const Details = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
                                             <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                            <TableCell align="right">{row.medicationName}</TableCell>
-                                            <TableCell align="right">{row.totalUnits}</TableCell>
-                                            <TableCell align="right">{row.doseDays}</TableCell>
+                                            <TableCell align="center">{row.medicationName}</TableCell>
+                                            <TableCell align="center">{row.totalUnits}</TableCell>
+                                            <TableCell align="center">{row.doseDays}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
@@ -187,9 +187,9 @@ const Details = () => {
                             <Table sx={{ minWidth: 350 }} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell className='tableHead'>No.</TableCell>
-                                        <TableCell className='tableHead' align="right">Follow Up Date</TableCell>
-                                        <TableCell className='tableHead' align="right">Complete/Not-Complete</TableCell>
+                                        <TableCell className='tableHead'>S.No.</TableCell>
+                                        <TableCell className='tableHead' align="center">Follow Up Date</TableCell>
+                                        <TableCell className='tableHead' align="center">Complete/Not-Complete</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -199,8 +199,8 @@ const Details = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
                                             <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                            <TableCell align="right">{row.followupDate}</TableCell>
-                                            <TableCell align="right">{(row.completed ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />)}</TableCell>
+                                            <TableCell align="center">{row.followupDate}</TableCell>
+                                            <TableCell align="center">{(row.completed ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />)}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
