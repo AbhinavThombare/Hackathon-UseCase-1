@@ -14,7 +14,7 @@ import PatientData from '../../patient_data.json'
 
 
 import './details.css'
-import PieChartWithCustomizedLabel from './Piechart/piechart';
+import PieChartWithCustomizedLabel from '../Landing/Piechart/piechart';
 
 const Details = () => {
 
@@ -77,7 +77,7 @@ const Details = () => {
                                     <Table sx={{ minWidth: 150 }} aria-label="simple table">
                                         <TableHead>
                                             <TableRow>
-                                                <TableCell className='tableHead'>No.</TableCell>
+                                                <TableCell className='tableHead'>S.No.</TableCell>
                                                 <TableCell className='tableHead' align='right'>Diagnosis</TableCell>
                                                 <TableCell className='tableHead' align="right">Admit Date</TableCell>
                                                 <TableCell className='tableHead' align="right">Discharge Date</TableCell>
@@ -115,7 +115,7 @@ const Details = () => {
                                                 <TableCell className='tableHead'>Patient Name</TableCell>
                                                 <TableCell className='tableHead' align="right">Admission Date</TableCell>
                                                 <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align='right'>Initial Complent</TableCell>
+                                                <TableCell className='tableHead' align='right'>Initial Complaint</TableCell>
                                                 
                                             </TableRow>
                                         </TableHead>
@@ -158,7 +158,7 @@ const Details = () => {
                             <Table sx={{ minWidth: 350 }} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell className='tableHead'>No.</TableCell>
+                                        <TableCell className='tableHead'>S.No.</TableCell>
                                         <TableCell className='tableHead' align="right">Medicine Name</TableCell>
                                         <TableCell className='tableHead' align="right">Units</TableCell>
                                         <TableCell className='tableHead' align="right">Days</TableCell>
@@ -187,7 +187,7 @@ const Details = () => {
                             <Table sx={{ minWidth: 350 }} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell className='tableHead'>No.</TableCell>
+                                        <TableCell className='tableHead'>S.No.</TableCell>
                                         <TableCell className='tableHead' align="right">Follow Up Date</TableCell>
                                         <TableCell className='tableHead' align="right">Complete/Not-Complete</TableCell>
                                     </TableRow>

@@ -53,7 +53,7 @@ const Header = () => {
                             </li>
                             {/* <span className='vl'></span> */}
                             <li className="nav-item">
-                                <Link className={highlight === 'notification' ? 'nav-link active' : 'nav-link'} to='/notification' onClick={() => handleHighlight('notification')}><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />Remainder / Notification</Link>
+                                <Link className='nav-link' to='/notification'><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />Reminder / Notification</Link>
                             </li>
                             {/* <span className='vl'></span> */}
                             <li className="nav-item">
@@ -61,7 +61,7 @@ const Header = () => {
                             </li>
                             {/* <span className='vl'></span> */}
                             <li className="nav-item">
-                                <Link className={highlight === 'dashboard' ? 'nav-link active' : 'nav-link'} to='#' onClick={() => handleHighlight('dashboard')}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Dashboard - Overall Satisfication</Link>
+                                <Link className='nav-link' to='/landing'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Dashboard - Overall Satisfaction</Link>
                             </li>
                         </ul>
                     </div>

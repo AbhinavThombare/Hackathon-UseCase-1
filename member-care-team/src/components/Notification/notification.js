@@ -24,14 +24,14 @@ const Notification = () => {
             <Header />
             <div className='notification-table-div'>
                 <div className='medicine-div'>
-                    <p className='medicine-title'><strong>Remainder / Notification</strong></p>
+                    <p className='medicine-title'><strong>Remider / Notifications</strong></p>
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
                                 <TableRow>
-                                    <TableCell>No.</TableCell>
+                                    <TableCell>S.No.</TableCell>
                                     <TableCell align="right">Dates</TableCell>
-                                    <TableCell align="right">Supervisior Name</TableCell>
+                                    <TableCell align="right">Supervisor Name</TableCell>
                                     <TableCell align="center">Purpose</TableCell>
                                     <TableCell align="right">Notification Type</TableCell>
                                     <TableCell align="right">Status</TableCell>

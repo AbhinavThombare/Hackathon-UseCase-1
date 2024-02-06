@@ -43,7 +43,7 @@ const FollowUp = () => {
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
                                 <TableRow >
-                                    <TableCell className="head">No.</TableCell>
+                                    <TableCell className="head">S.No.</TableCell>
                                     <TableCell className="head" align="right">FollowUp Date</TableCell>
                                     <TableCell className="head" align="center">Patient Condition</TableCell>
                                     <TableCell className="head" align="right">Supervisor Name</TableCell>
