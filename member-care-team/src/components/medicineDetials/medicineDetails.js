@@ -14,8 +14,11 @@ import PatientData from '../../patient_data.json'
 
 const MedicineDetials = () => {
 
+<<<<<<< HEAD
+=======
    
 
+>>>>>>> 8e7b6f3327a5d51e6b211b0baa2de3fb0dac2482
     return (
         <>
             <Header />

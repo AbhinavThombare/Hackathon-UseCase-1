@@ -6,6 +6,7 @@ import Details from './components/Details/details';
 import MedicineDetials from './components/medicineDetials/medicineDetails';
 import FollowUp from './components/FollowUp/followUp';
 import Notification from './components/Notification/notification';
+import Coupon from './components/coupon/coupon';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path:'notification',
     element: <Notification/>
+  },
+  {
+    path:'coupon',
+    element: <Coupon/>
   }
 
 ]);
