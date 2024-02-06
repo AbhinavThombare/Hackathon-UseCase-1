@@ -1,0 +1,63 @@
+.icon-style{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    /* margin: 4px; */
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 118, 210);
+ 
+}
+
+.check-box-style{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    margin: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59 210 25)
+}
+
+
+.cancel-icon-style{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    margin: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 24, 34)
+}
+.notification-table-div{
+    margin: 5px;
+    background-color: #FEEAE6;
+}
+/* .notification-div{
+    padding: 2px;
+} */
+ 
+.notification-title{
+    font-size: 20px;
+}

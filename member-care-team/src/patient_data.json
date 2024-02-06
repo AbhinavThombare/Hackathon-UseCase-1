@@ -232,5 +232,27 @@
       "discount": 10,
       "afterDiscount": 6300
     }
-  ]
+  ],"NotificationData":[
+    {
+      "Dates":"2024-02-10",
+      "SupervisiorName":"Abhishek",
+      "Purpose":"Medicine Remainder",
+      "FeedbackCall":"8788675897",
+      "check":true
+    },
+    {
+      "Dates":"2024-02-11",
+      "SupervisiorName":"Abhishek",
+      "Purpose":"Medicine Remainder",
+      "FeedbackCall":"8788675897",
+      "check":true
+    },
+    {
+      "Dates":"2024-02-12",
+      "SupervisiorName":"Abhishek",
+      "Purpose":"Medicine Remainder",
+      "FeedbackCall":"8788675897",
+      "check":false
+    }
+    ]
 }
