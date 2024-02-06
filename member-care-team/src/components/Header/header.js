@@ -30,7 +30,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <Link className='nav-link' to='/detials'><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br /> Details</Link>
+                                <Link className='nav-link' to='/detials'><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br /> Medical Summary</Link>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
@@ -38,15 +38,19 @@ const Header = () => {
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <Link className='nav-link' to='/medicine'><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />Medicine</Link>
+                                <Link className='nav-link' to='/medicine'><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />Medicine Schedule</Link>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <Link className='nav-link' to='/notification'><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />Notification</Link>
+                                <Link className='nav-link' to='/notification'><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />Remainder / Notification</Link>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <Link className='nav-link' to='/coupon'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Coupon</Link>
+                                <Link className='nav-link' to='/coupon'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Coupons - Offers/Promo Code</Link>
+                            </li>
+                            <span className='vl'></span>
+                            <li className="nav-item">
+                                <Link className='nav-link' to='/coupon'><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />Dashboard - Overall Satisfication</Link>
                             </li>
                         </ul>
                     </div>

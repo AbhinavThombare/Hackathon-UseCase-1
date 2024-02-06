@@ -30,11 +30,11 @@ const Notification = () => {
                             <TableHead>
                                 <TableRow>
                                     <TableCell>No.</TableCell>
-                                    <TableCell align="right">Email</TableCell>
-                                    <TableCell align="right">Supervisior</TableCell>
-                                    <TableCell align="center">Medicine Remainder</TableCell>
-                                    <TableCell align="right">Feedback Call</TableCell>
-                                    <TableCell align="right">Follow Call</TableCell>
+                                    <TableCell align="right">Dates</TableCell>
+                                    <TableCell align="right">Supervisior Name</TableCell>
+                                    <TableCell align="center">Purpose</TableCell>
+                                    <TableCell align="right">Notification Type</TableCell>
+                                    <TableCell align="right">Status</TableCell>
 
                                 </TableRow>
                             </TableHead>
@@ -45,15 +45,16 @@ const Notification = () => {
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
                                         <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                        <TableCell align="right">{row.email} <br/> <button className='btn btn-success' onClick={handleClick}>Email Send</button></TableCell>
-                                        <TableCell align="right">{row.supervisiorPhoneCall} <br/> <button className='btn btn-success' onClick={handleClick}> Call</button></TableCell>
+                                        <TableCell align="right">2024-02-10</TableCell>
+                                        <TableCell align="right">Abhinav</TableCell>
                                         <TableCell align="right">
-                                            <TableCell align="right">Morning Remainder  <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
+                                            <p>Medicine Remainder</p>
+                                            {/* <TableCell align="right">Morning Remainder  <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
                                             <TableCell align="right">Afternoon Remainder <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
-                                            <TableCell align="right">Night Remainder <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell>
+                                            <TableCell align="right">Night Remainder <br/> <button className='btn btn-success' onClick={handleClick}>Remainder Send</button></TableCell> */}
                                         </TableCell>
-                                        <TableCell align="right">{row.feedBackCall} <br/> <button className='btn btn-success' onClick={handleClick}>Call</button></TableCell>
-                                        <TableCell align="right">{row.followUpCall} <br/> <button className='btn btn-success' onClick={handleClick}>Call</button></TableCell>
+                                        <TableCell align="right">SMS <br/> Notification <br/>Phone Call </TableCell>
+                                        <TableCell align="right">checkbox </TableCell>
 
                                     </TableRow>
                                 ))}

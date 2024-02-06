@@ -20,125 +20,208 @@
       "diagnosis": "Myocardial Infarction"
     }
   ],
-  "dischargeData":[
+  "dischargeData": [
     {
       "diagnosis": "Acute Appendicitis",
       "admitDate": "2024-02-05",
       "dischargeDate": "2024-02-08",
       "dischargeSummary": "Patient underwent successful appendectomy. Recovery is expected to be smooth with prescribed antibiotics."
-    },
-    {
-      "diagnosis": "Pneumonia",
-      "admitDate": "2024-02-10",
-      "dischargeDate": "2024-02-15",
-      "dischargeSummary": "Completed antibiotic course, responded well to treatment. Follow-up recommended for complete recovery."
-    },
-    {
-      "diagnosis": "Myocardial Infarction",
-      "admitDate": "2024-02-15",
-      "dischargeDate": "2024-02-20",
-      "dischargeSummary": "Received coronary angioplasty. Stable condition upon discharge. Cardiac rehabilitation program advised."
     }
   ],
   "medicationData": [
     {
-      "date":"2024-02-06",
+      "date": "2024-02-06",
       "medicationName": "Insulin",
-      "doseDays":"3",
+      "doseDays": "3",
       "dosageDetails": [
-        {"timeOfDay": "Morning", "units": 2},
-        {"timeOfDay": "Afternoon", "units": 3},
-        {"timeOfDay": "Evening", "units": 2}
+        {
+          "timeOfDay": "Morning",
+          "units": 2
+        },
+        {
+          "timeOfDay": "Afternoon",
+          "units": 3
+        },
+        {
+          "timeOfDay": "Evening",
+          "units": 2
+        }
       ],
-      "takenDose":[
-        {"Mtaken":"0"},
-        {"Ataken":"2"},
-        {"Ntaken":"0"}
+      "takenDose": [
+        {
+          "Mtaken": "0"
+        },
+        {
+          "Ataken": "2"
+        },
+        {
+          "Ntaken": "0"
+        }
       ],
       "totalUnits": "2 times a day",
       "modeOfDose": "Subcutaneous injection"
     },
     {
-      "date":"2024-02-07",
+      "date": "2024-02-07",
       "medicationName": "Metformin",
-      "doseDays":"3",
+      "doseDays": "3",
       "dosageDetails": [
-        {"timeOfDay": "Morning", "units": 1},
-        {"timeOfDay": "Evening", "units": 1}
+        {
+          "timeOfDay": "Morning",
+          "units": 1
+        },
+        {
+          "timeOfDay": "Evening",
+          "units": 1
+        }
       ],
-      "takenDose":[
-        {"Mtaken":"2"},
-        {"Ataken":"-1"},
-        {"Ntaken":"0"}
+      "takenDose": [
+        {
+          "Mtaken": "2"
+        },
+        {
+          "Ataken": "-1"
+        },
+        {
+          "Ntaken": "0"
+        }
       ],
       "totalUnits": "2 times a day",
       "modeOfDose": "Oral"
     },
     {
-      "date":"2024-02-08",
+      "date": "2024-02-08",
       "medicationName": "Aspirin",
-      "doseDays":"3",
+      "doseDays": "3",
       "dosageDetails": [
-        {"timeOfDay": "Morning", "units": 1},
-        {"timeOfDay": "Evening", "units": 1}
+        {
+          "timeOfDay": "Morning",
+          "units": 1
+        },
+        {
+          "timeOfDay": "Evening",
+          "units": 1
+        }
       ],
       "totalUnits": "1 times a day",
-      "takenDose":[
-        {"Mtaken":"-1"},
-        {"Ataken":"-1"},
-        {"Ntaken":"-1"}
+      "takenDose": [
+        {
+          "Mtaken": "-1"
+        },
+        {
+          "Ataken": "-1"
+        },
+        {
+          "Ntaken": "-1"
+        }
       ],
       "modeOfDose": "Oral"
     },
     {
       "medicationName": "Ibuprofen",
-      "doseDays":"3",
+      "doseDays": "3",
       "dosageDetails": [
-        {"timeOfDay": "Morning", "units": 1},
-        {"timeOfDay": "Evening", "units": 1}
+        {
+          "timeOfDay": "Morning",
+          "units": 1
+        },
+        {
+          "timeOfDay": "Evening",
+          "units": 1
+        }
       ],
       "totalUnits": "6 times a day",
-      "takenDose":[
-        {"Mtaken":"-1"},
-        {"Ataken":"-1"},
-        {"Ntaken":"2"}
+      "takenDose": [
+        {
+          "Mtaken": "-1"
+        },
+        {
+          "Ataken": "-1"
+        },
+        {
+          "Ntaken": "2"
+        }
       ],
       "modeOfDose": "Oral"
     },
     {
       "medicationName": "Amoxicillin",
-      "doseDays":"3",
+      "doseDays": "3",
       "dosageDetails": [
-        {"timeOfDay": "Morning", "units": 1},
-        {"timeOfDay": "Evening", "units": 1}
+        {
+          "timeOfDay": "Morning",
+          "units": 1
+        },
+        {
+          "timeOfDay": "Evening",
+          "units": 1
+        }
       ],
       "totalUnits": "4 times a day ",
-      "takenDose":[
-        {"Mtaken":"-1"},
-        {"Ataken":"-1"},
-        {"Ntaken":"0"}
+      "takenDose": [
+        {
+          "Mtaken": "-1"
+        },
+        {
+          "Ataken": "-1"
+        },
+        {
+          "Ntaken": "0"
+        }
       ],
       "modeOfDose": "Oral"
     }
   ],
   "followupData": [
     {
-      "followupDate": "2024-02-15",
+      "followupDate": "2024-02-10",
       "completed": true,
       "customerCareInteraction": "Follow-up call to check recovery status. Patient reported feeling much better.",
-      "CustomerCareNo":"9847636289"
+      "CustomerCareNo": "9847636289"
     },
     {
-      "followupDate": "2024-02-25",
-      "completed": false,
+      "followupDate": "2024-02-11",
+      "completed": true,
       "customerCareInteraction": "Attempted follow-up, but patient unavailable. Left voicemail for callback.",
-      "CustomerCareNo":"9847636289"
+      "CustomerCareNo": "9847636289"
     },
     {
-      "followupDate": "2024-03-05",
+      "followupDate": "2024-02-12",
       "completed": true,
       "customerCareInteraction": "Successful follow-up. Patient confirmed full recovery and expressed satisfaction with care received.",
-      "CustomerCareNo":"9847636289"
+      "CustomerCareNo": "9847636289"
+    }
+  ],
+  "Coupons": [
+    {
+      "testName": "CBC",
+      "price": 1000,
+      "discount": 10,
+      "afterDiscount": 900
+    },
+    {
+      "testName": "CT Scan",
+      "price": 2000,
+      "discount": 10,
+      "afterDiscount": 1800
+    },
+    {
+      "testName": "ElectoCardioGram",
+      "price": 800,
+      "discount": 10,
+      "afterDiscount": 720
+    },
+    {
+      "testName": "Endoscopy",
+      "price": 4000,
+      "discount": 10,
+      "afterDiscount": 3600
+    },
+    {
+      "testName": "Biopsy",
+      "price": 7000,
+      "discount": 10,
+      "afterDiscount": 6300
     }
   ]
 }

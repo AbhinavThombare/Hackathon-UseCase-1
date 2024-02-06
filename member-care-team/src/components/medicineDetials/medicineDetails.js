@@ -37,16 +37,16 @@ const MedicineDetials = () => {
             </div>
             <div className='medicine-table-div'>
                 <div className='medicine-div'>
-                    <p className='medicine-title'><strong>Given Medicine</strong></p>
+                    <p className='medicine-title'><strong>Medicine Schedule</strong></p>
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
                                 <TableRow >
                                     <TableCell className="head">No.</TableCell>
                                     <TableCell className="head" align="right">Medicine Name</TableCell>
-                                    <TableCell className="head" align="right">Quantity</TableCell>
+                                    <TableCell className="head" align="right">Date</TableCell>
                                     <TableCell className="head"align="right">Mode Of Dose</TableCell>
-                                    <TableCell className="head" align="right">Timing</TableCell>
+                                    <TableCell className="head" align="right">Status</TableCell>
 
 
                                 </TableRow>
