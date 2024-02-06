@@ -12,7 +12,9 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import PatientData from '../../patient_data.json'
 
+
 import './details.css'
+import PieChartWithCustomizedLabel from './Piechart/piechart';
 
 const Details = () => {
 
@@ -148,11 +150,7 @@ const Details = () => {
                     </div>
                 </div>
 
-                <div className='extra-div'>
-                    <div className='extra-text-area-1'>
-                        <div className='section-1'>
-
-                        </div>
+                
                     </div>
 
                     <div className='extra-text-area-2'>
@@ -160,8 +158,9 @@ const Details = () => {
 
                         </div>
                     </div>
-                </div>
-            </div>
+                
+                
+            
         </>
     )
 }
