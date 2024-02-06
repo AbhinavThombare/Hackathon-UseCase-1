@@ -27,16 +27,13 @@ const FollowUp=()=>{
     const open = Boolean(anchorEl);
     const id = open ? 'simple-popper' : undefined;
 
-    const handleActionButton =() => {
-        alert('Action Button Clicked')
-    }
 
     return (
         <>
             <Header />
             <div className='medicine-table-div'>
                 <div className='medicine-div'>
-                    <p className='patient-title' ><strong onClick={handleClick}>{PatientData.name} - {PatientData.patientId}</strong></p>
+                    <p className='patient-title' ><strong onClick={handleClick}>{PatientData.name}</strong></p>
                     <Popper id={id} open={open} anchorEl={anchorEl}>
         <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
           Patient Description
@@ -45,13 +42,13 @@ const FollowUp=()=>{
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
-                                <TableRow>
-                                    <TableCell>No.</TableCell>
-                                    <TableCell align="right">FollowUp Date</TableCell>
-                                    <TableCell align="right">Completed</TableCell>
-                                    <TableCell align="center">Patient Status</TableCell>
-                                    <TableCell align="right">Customer Care</TableCell>
-                                    <TableCell align="right">Action</TableCell>
+                                <TableRow >
+                                    <TableCell className='head'>No.</TableCell>
+                                    <TableCell className='head' align="right">FollowUp Date</TableCell>
+                                    <TableCell className='head' align="center">Patient Status</TableCell>
+                                    <TableCell className='head' align="right">Customer Care</TableCell>
+                                    <TableCell className='head' align="right">Completed</TableCell>
+
                                     
 
 
@@ -65,13 +62,14 @@ const FollowUp=()=>{
                                     >
                                         <TableCell component="th" scope="row">{index+1}</TableCell>
                                         <TableCell align="right">{row.followupDate}</TableCell>
+                                        
+                                        <TableCell align="center" className='patient-status'>{row.customerCareInteraction}</TableCell>
+                                        <TableCell align="right">{row.CustomerCareNo}</TableCell>
                                         <TableCell align="right">
                                             {row.completed?(<FontAwesomeIcon icon={faCheck} />):(<FontAwesomeIcon icon={faCircleXmark} />)}
     
                                         </TableCell>
-                                        <TableCell align="center">{row.customerCareInteraction}</TableCell>
-                                        <TableCell align="right">{row.CustomerCareNo}</TableCell>
-                                        <TableCell align="right"><button className='btn btn-primary' onClick={handleActionButton} >Action Button</button></TableCell>
+                                        
                                     </TableRow>
                                 ))}
                             </TableBody>

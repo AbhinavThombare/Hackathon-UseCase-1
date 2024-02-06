@@ -14,3 +14,12 @@
 .patient-title strong{
     cursor: pointer;
 }
+.patient-status{
+    width: 400px;
+    padding: 14px;
+    text-align: center;
+}
+.head{
+    font-weight: bold;
+    
+}
