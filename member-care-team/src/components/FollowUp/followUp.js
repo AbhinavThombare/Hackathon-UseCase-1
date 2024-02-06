@@ -8,11 +8,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import Popper from '@mui/material/Popper';
 import Box from '@mui/material/Box';
 import PatientData from '../../patient_data.json'
+import { Checkbox } from '@mui/material';
 
 
 const FollowUp=()=>{
@@ -41,11 +42,11 @@ const FollowUp=()=>{
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
                                 <TableRow >
-                                    <TableCell className='head'>No.</TableCell>
-                                    <TableCell className='head' align="right">FollowUp Date</TableCell>
-                                    <TableCell className='head' align="center">Patient Status</TableCell>
-                                    <TableCell className='head' align="right">Customer Care</TableCell>
-                                    <TableCell className='head' align="right">Completed</TableCell>
+                                    <TableCell className="head">No.</TableCell>
+                                    <TableCell className="head" align="right">FollowUp Date</TableCell>
+                                    <TableCell className="head" align="center">Patient Status</TableCell>
+                                    <TableCell className="head" align="right">Customer Care</TableCell>
+                                    <TableCell className="head" align="right">Completed</TableCell>
 
                                     
 
@@ -64,7 +65,12 @@ const FollowUp=()=>{
                                         <TableCell align="center" className='patient-status'>{row.customerCareInteraction}</TableCell>
                                         <TableCell align="right">{row.CustomerCareNo}</TableCell>
                                         <TableCell align="right">
-                                            {row.completed?(<FontAwesomeIcon icon={faCheck} />):(<FontAwesomeIcon icon={faCircleXmark} />)}
+                                        <div>
+                                                <Checkbox checked={true} color={(row.completed?'success':'warning')} />
+                                                <Checkbox checked={true} color={(row.completed?'success':'warning')} />
+                                                <Checkbox checked={true} color={(row.completed?'success':'warning')} />
+                                               
+                                            </div>
     
                                         </TableCell>
                                         

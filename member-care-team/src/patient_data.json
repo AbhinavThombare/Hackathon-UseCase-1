@@ -42,6 +42,7 @@
   ],
   "medicationData": [
     {
+      "date":"2024-02-06",
       "medicationName": "Insulin",
       "doseDays":"3",
       "dosageDetails": [
@@ -50,14 +51,15 @@
         {"timeOfDay": "Evening", "units": 2}
       ],
       "takenDose":[
-        {"Mtaken":"1"},
+        {"Mtaken":"0"},
         {"Ataken":"2"},
         {"Ntaken":"0"}
       ],
-      "totalUnits": 2,
+      "totalUnits": "2 times a day",
       "modeOfDose": "Subcutaneous injection"
     },
     {
+      "date":"2024-02-07",
       "medicationName": "Metformin",
       "doseDays":"3",
       "dosageDetails": [
@@ -65,25 +67,26 @@
         {"timeOfDay": "Evening", "units": 1}
       ],
       "takenDose":[
-        {"Mtaken":"1"},
+        {"Mtaken":"2"},
         {"Ataken":"-1"},
         {"Ntaken":"0"}
       ],
-      "totalUnits": 2,
+      "totalUnits": "2 times a day",
       "modeOfDose": "Oral"
     },
     {
+      "date":"2024-02-08",
       "medicationName": "Aspirin",
       "doseDays":"3",
       "dosageDetails": [
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
       ],
-      "totalUnits": 9,
+      "totalUnits": "1 times a day",
       "takenDose":[
-        {"Mtaken":"1"},
-        {"Ataken":"1"},
-        {"Ntaken":"1"}
+        {"Mtaken":"-1"},
+        {"Ataken":"-1"},
+        {"Ntaken":"-1"}
       ],
       "modeOfDose": "Oral"
     },
@@ -94,10 +97,10 @@
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
       ],
-      "totalUnits": 6,
+      "totalUnits": "6 times a day",
       "takenDose":[
-        {"Mtaken":"1"},
-        {"Ataken":"1"},
+        {"Mtaken":"-1"},
+        {"Ataken":"-1"},
         {"Ntaken":"2"}
       ],
       "modeOfDose": "Oral"
@@ -109,11 +112,11 @@
         {"timeOfDay": "Morning", "units": 1},
         {"timeOfDay": "Evening", "units": 1}
       ],
-      "totalUnits": 4,
+      "totalUnits": "4 times a day ",
       "takenDose":[
-        {"Mtaken":"1"},
+        {"Mtaken":"-1"},
         {"Ataken":"-1"},
-        {"Ntaken":"2"}
+        {"Ntaken":"0"}
       ],
       "modeOfDose": "Oral"
     }

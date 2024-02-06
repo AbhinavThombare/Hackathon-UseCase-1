@@ -20,5 +20,12 @@
     text-align: center;
 }
 .head{
-    font-weight: bold;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.87);
+}
+.tick{
+    background-color: green;
+}
+.cross{
+    background-color: red;
 }

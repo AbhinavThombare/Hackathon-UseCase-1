@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/header';
 import './medicineDetials.css';
 import Table from '@mui/material/Table';
@@ -13,33 +13,47 @@ import PatientData from '../../patient_data.json'
 
 
 const MedicineDetials = () => {
-
-<<<<<<< HEAD
-=======
+    const [selectedDate,setSelectedDate]=useState(null);
+    const handleDateClick=(date)=>{
+        setSelectedDate(date);
+    };
+    
    
 
->>>>>>> 8e7b6f3327a5d51e6b211b0baa2de3fb0dac2482
+
+   
+
     return (
         <>
             <Header />
+            <div className='date-dropdown'>
+               <label htmlFor='dateSelect'>Select a Date: </label>
+               <select id='dateSelect' onChange={handleDateClick}>
+                <option value="" disabled selected>Select Date</option>
+                {PatientData.medicationData.map((date)=>(
+                    <option key={date} value={date}>{date.date}</option>
+                ))}
+               </select>
+            </div>
             <div className='medicine-table-div'>
                 <div className='medicine-div'>
                     <p className='medicine-title'><strong>Given Medicine</strong></p>
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 350 }} aria-label="simple table">
                             <TableHead>
-                                <TableRow>
-                                    <TableCell>No.</TableCell>
-                                    <TableCell align="right">Medicine Name</TableCell>
-                                    <TableCell align="right">Quantity</TableCell>
-                                    <TableCell align="right">Mode Of Dose</TableCell>
-                                    <TableCell align="right">Timing</TableCell>
+                                <TableRow >
+                                    <TableCell className="head">No.</TableCell>
+                                    <TableCell className="head" align="right">Medicine Name</TableCell>
+                                    <TableCell className="head" align="right">Quantity</TableCell>
+                                    <TableCell className="head"align="right">Mode Of Dose</TableCell>
+                                    <TableCell className="head" align="right">Timing</TableCell>
 
 
                                 </TableRow>
                             </TableHead>
                             <TableBody>
                                 {PatientData.medicationData.map((row, index) => (
+                                    
                                     <TableRow
                                         key={row.id}
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
