@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header/header';
+import Home from './components/home/Home';
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Details from './components/Details/details';
@@ -11,7 +11,7 @@ import Landing from './components/Landing/Landing';
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Header/>,
+    element:<Home/>,
     id:'root'
   },
   {
