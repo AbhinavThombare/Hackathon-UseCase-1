@@ -11,7 +11,7 @@ const data = [
 
 const sizing = {
   margin: { right: 5 },
-  width: 400,
+  width: 900,
   height: 200,
   legend: { hidden: true },
 };

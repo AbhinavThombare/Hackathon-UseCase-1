@@ -32,11 +32,11 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>S.No</TableCell>
-                                                <TableCell className='tableHead' align='right'> Department</TableCell>
-                                                <TableCell className='tableHead' align='right'> Doctor</TableCell>
-                                                <TableCell className='tableHead' align="right">Appointment Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Symptoms</TableCell>
-                                                <TableCell className='tableHead' align="right">Details</TableCell>
+                                                <TableCell className='tableHead' align='center'> Department</TableCell>
+                                                <TableCell className='tableHead' align='center'> Doctor</TableCell>
+                                                <TableCell className='tableHead' align="center">Appointment Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Symptoms</TableCell>
+                                                <TableCell className='tableHead' align="center">Details</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -46,11 +46,19 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
+<<<<<<< HEAD
                                                     <TableCell align="right">{row.department}</TableCell>
                                                     <TableCell align="right">{row.doctor}</TableCell>
                                                     <TableCell align="right">{row.admitDate}</TableCell>
                                                     <TableCell align="right">{row.diagnosis}</TableCell>
                                                     <TableCell align="right"><a href="#">View Summary</a></TableCell>
+=======
+                                                    <TableCell align="center">Internal Medicine</TableCell>
+                                                    <TableCell align="center">ABC</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.diagnosis}</TableCell>
+                                                    <TableCell align="center"><a href="#">View Summary</a></TableCell>
+>>>>>>> 61adc1c05801f1ebe16c6b4fa1629840bc81e598
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -78,10 +86,10 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>S.No.</TableCell>
-                                                <TableCell className='tableHead' align='right'>Diagnosis</TableCell>
-                                                <TableCell className='tableHead' align="right">Admit Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Summary</TableCell>
+                                                <TableCell className='tableHead' align='center'>Diagnosis</TableCell>
+                                                <TableCell className='tableHead' align="center">Admit Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Summary</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -92,8 +100,8 @@ const Details = () => {
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
                                                     <TableCell>{row.diagnosis}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
                                                     <TableCell>{row.dischargeSummary}</TableCell>
                                                 </TableRow>
                                             ))}
@@ -113,9 +121,9 @@ const Details = () => {
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className='tableHead'>Patient Name</TableCell>
-                                                <TableCell className='tableHead' align="right">Admission Date</TableCell>
-                                                <TableCell className='tableHead' align="right">Discharge Date</TableCell>
-                                                <TableCell className='tableHead' align='right'>Initial Complaint</TableCell>
+                                                <TableCell className='tableHead' align="center">Admission Date</TableCell>
+                                                <TableCell className='tableHead' align="center">Discharge Date</TableCell>
+                                                <TableCell className='tableHead' align='center'>Initial Complaint</TableCell>
                                                 
                                             </TableRow>
                                         </TableHead>
@@ -126,9 +134,9 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                                    <TableCell>{row.diagnosis}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.dischargeDate}</TableCell>
+                                                    <TableCell align="center">{row.diagnosis}</TableCell>
+                                                    <TableCell align="center">{row.admitDate}</TableCell>
+                                                    <TableCell align="center">{row.dischargeDate}</TableCell>
                                                     {/* <TableCell>Abhianv</TableCell> */}
                                                 </TableRow>
                                             ))}
@@ -159,9 +167,9 @@ const Details = () => {
                                 <TableHead>
                                     <TableRow>
                                         <TableCell className='tableHead'>S.No.</TableCell>
-                                        <TableCell className='tableHead' align="right">Medicine Name</TableCell>
-                                        <TableCell className='tableHead' align="right">Units</TableCell>
-                                        <TableCell className='tableHead' align="right">Days</TableCell>
+                                        <TableCell className='tableHead' align="center">Medicine Name</TableCell>
+                                        <TableCell className='tableHead' align="center">Units</TableCell>
+                                        <TableCell className='tableHead' align="center">Days</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -171,9 +179,9 @@ const Details = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
                                             <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                            <TableCell align="right">{row.medicationName}</TableCell>
-                                            <TableCell align="right">{row.totalUnits}</TableCell>
-                                            <TableCell align="right">{row.doseDays}</TableCell>
+                                            <TableCell align="center">{row.medicationName}</TableCell>
+                                            <TableCell align="center">{row.totalUnits}</TableCell>
+                                            <TableCell align="center">{row.doseDays}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
@@ -188,8 +196,8 @@ const Details = () => {
                                 <TableHead>
                                     <TableRow>
                                         <TableCell className='tableHead'>S.No.</TableCell>
-                                        <TableCell className='tableHead' align="right">Follow Up Date</TableCell>
-                                        <TableCell className='tableHead' align="right">Complete/Not-Complete</TableCell>
+                                        <TableCell className='tableHead' align="center">Follow Up Date</TableCell>
+                                        <TableCell className='tableHead' align="center">Complete/Not-Complete</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -199,8 +207,8 @@ const Details = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
                                             <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                            <TableCell align="right">{row.followupDate}</TableCell>
-                                            <TableCell align="right">{(row.completed ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />)}</TableCell>
+                                            <TableCell align="center">{row.followupDate}</TableCell>
+                                            <TableCell align="center">{(row.completed ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faCircleXmark} />)}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>
