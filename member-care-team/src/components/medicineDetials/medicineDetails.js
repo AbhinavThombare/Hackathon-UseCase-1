@@ -27,7 +27,6 @@ const MedicineDetials = () => {
 
     return (
         <>
-            <Header />
             <SelectVariants/>
             <div className='medicine-table-div'>
                 <div className='medicine-div'>

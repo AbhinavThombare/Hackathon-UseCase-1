@@ -6,7 +6,6 @@ import TriggerFocusTextarea from './TextArea/textArea';
 const Landing=()=>{
     return (
         <div>
-        <Header/>
         <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Overall Satisfaction</strong></p>
                         <div className='discharge-summary-data-div-1'>

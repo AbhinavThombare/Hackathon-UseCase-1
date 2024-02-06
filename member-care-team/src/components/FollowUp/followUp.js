@@ -29,7 +29,6 @@ const FollowUp = () => {
 
     return (
         <>
-            <Header />
             <div className='medicine-table-div'>
                 <div className='medicine-div'>
                     <p className='follow-up-title'><strong>Follow Up</strong></p>
