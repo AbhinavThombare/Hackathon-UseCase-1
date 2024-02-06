@@ -46,19 +46,11 @@ const Details = () => {
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
                                                     <TableCell component="th" scope="row">{index + 1}</TableCell>
-<<<<<<< HEAD
-                                                    <TableCell align="right">{row.department}</TableCell>
-                                                    <TableCell align="right">{row.doctor}</TableCell>
-                                                    <TableCell align="right">{row.admitDate}</TableCell>
-                                                    <TableCell align="right">{row.diagnosis}</TableCell>
-                                                    <TableCell align="right"><a href="#">View Summary</a></TableCell>
-=======
                                                     <TableCell align="center">Internal Medicine</TableCell>
                                                     <TableCell align="center">ABC</TableCell>
                                                     <TableCell align="center">{row.admitDate}</TableCell>
                                                     <TableCell align="center">{row.diagnosis}</TableCell>
                                                     <TableCell align="center"><a href="#">View Summary</a></TableCell>
->>>>>>> 61adc1c05801f1ebe16c6b4fa1629840bc81e598
                                                 </TableRow>
                                             ))}
                                         </TableBody>
