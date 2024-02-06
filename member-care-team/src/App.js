@@ -1,6 +1,5 @@
 import './App.css';
-import Home from './components/home/Home';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter,Routes,Route,BrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router';
 import Details from './components/Details/details';
 import MedicineDetials from './components/medicineDetials/medicineDetails';
@@ -9,48 +8,26 @@ import Notification from './components/Notification/notification';
 import Coupon from './components/coupon/coupon';
 import Landing from './components/Landing/Landing';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Details />,
-    id: 'root'
-  },
-  {
-    path: 'detials',
-    element: <Details />
-  },
-  {
-    path: 'medicine',
-    element: <MedicineDetials />
-  },
-  {
-    path: 'followup',
-    element: <FollowUp />
-  },
-  {
-    path: 'notification',
-    element: <Notification />
-  },
-  {
-    path: 'coupon',
-    element: <Coupon />
-  }
-  ,
-  {
-    path: 'landing',
-    element: <Landing />
-  }
-]);
+import React from 'react'
+import Header from './components/Header/header';
 
-function App() {
-
-
+const App = () => {
   return (
-    <>
-      <RouterProvider router={router}></RouterProvider>
-    </>
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Details/>}/>
+      <Route path="/detials" element={<Details/>}/>
+      <Route path="/medicine" element={<MedicineDetials/>}/>
+      <Route path="/followup" element={<FollowUp/>}/>
+      <Route path="/notification" element={<Notification/>}/>
+      <Route path="/coupon" element={<Coupon/>}/>
+      <Route path="/landing" element={<Landing/>}/>
 
-  );
+
+      </Routes></BrowserRouter>
+  )
 }
 
-export default App;
+export default App
+

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faBell, faCalendarDays, faCircleInfo, faCircleUser, faTicket } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+// import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faPills } from '@fortawesome/free-solid-svg-icons';
 import PatientData from '../../patient_data.json';
 import i18n from '../../i18n';
@@ -11,12 +11,13 @@ import { withNamespaces } from 'react-i18next';
 import './header.css';
 
 const Header = ({t}) => {
-    const [highlight, setHighlight] = useState(null);
+    const [highlight, setHighlight] = useState(true);
 
     const navigate = useNavigate();
 
     const handleHighlight = (item) => {
         setHighlight(item)
+        console.log(item)
     }
     const navigateToContacts = () => {
         // 👇️ navigate to /contacts
@@ -52,27 +53,27 @@ const Header = ({t}) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <NavLink className={highlight === 'medicleSummary' ? 'nav-link active' : 'nav-link'} to='/detials' onClick={() => handleHighlight('medicleSummary')}><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br /> {t('medicalSummary')}</NavLink>
+                                <NavLink className={highlight===true?'nav-link active':'nav-link active1'} to='/detials' onClick={() => handleHighlight(true)}><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br />{t('medicalSummary')}</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className={highlight === 'followup' ? 'nav-link active' : 'nav-link'} to='/followup' onClick={() => handleHighlight('followup')}><span className='icon-tab'><FontAwesomeIcon icon={faCalendarDays} /></span><br />{t('followUp')}</NavLink>
+                                <NavLink className='nav-link' to='/followup' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faCalendarDays} /></span><br />{t('followUp')}</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className={highlight === 'medicine' ? 'nav-link active' : 'nav-link'} to='/medicine' onClick={() => handleHighlight('medicine')}><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />{t('medicineSchedule')}</NavLink>
+                                <NavLink className='nav-link' to='/medicine' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />{t('medicineSchedule')}</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className={highlight === 'notification' ? 'nav-link active' : 'nav-link'} to='/notification' onClick={() => handleHighlight('notification')}><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />{t('reminderNotification')}</NavLink>
+                                <NavLink className='nav-link' to='/notification' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faBell} /></span><br />{t('reminderNotification')}</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className={highlight === 'coupon' ? 'nav-link active' : 'nav-link'} to='/coupon' onClick={() => handleHighlight('coupon')}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('couponsDetails')}</NavLink>
+                                <NavLink className='nav-link' to='/coupon' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('couponsDetails')}</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className={highlight === 'landing' ? 'nav-link active' : 'nav-link'} to='/landing' onClick={() => handleHighlight('landing')}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('dashboardDetails')}</NavLink>
+                                <NavLink className='nav-link' to='/landing' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('dashboardDetails')}</NavLink>
                             </li>
                         </ul>
                     </div>

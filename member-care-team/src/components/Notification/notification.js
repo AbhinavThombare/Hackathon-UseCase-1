@@ -22,7 +22,6 @@ const Notification = () => {
 
     return (
         <>
-            <Header />
             <div className='notification-table-div'>
                 <div className='medicine-div'>
                     <p className='medicine-title'><strong>Remider / Notifications</strong></p>

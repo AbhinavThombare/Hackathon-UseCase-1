@@ -18,7 +18,6 @@ const Coupon = () => {
 
     return (
         <>
-            <Header />
             <div className='coupon-layout'>
                 
                 <div className='coupon-div'>

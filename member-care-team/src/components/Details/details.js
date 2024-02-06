@@ -20,7 +20,6 @@ const Details = () => {
 
     return (
         <>
-            <Header />
             <div className='details-div'>
                 <div className='summary-data-div'>
                     <div className='previous-history'>
