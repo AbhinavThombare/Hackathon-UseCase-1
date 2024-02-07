@@ -7,6 +7,7 @@ import { faPills } from '@fortawesome/free-solid-svg-icons';
 import PatientData from '../../patient_data.json';
 import i18n from '../../i18n';
 import { withNamespaces } from 'react-i18next';
+import medicalSummaryIcon from '../../assests/icon/medical-history.png'
 
 import './header.css';
 
@@ -32,14 +33,10 @@ const Header = ({t}) => {
     return (
         <div className='header-div'>
             <div className='patient-id-div'>
-                <div className='logo-img'>
-                    <img onClick={navigateToContacts} src="https://www.optum.com/content/dam/optum4/images/logos/optum-logo-ora-rgb1.svg" alt="logo" />
-                </div>
-                <div>
+                {/* <div>
                     <button onClick={() => changeLanguage('es')}>Spanish</button>
                     <button onClick={() => changeLanguage('en')}>English</button>
-                    {/* <h1>{t('Welcome to React')}</h1> */}
-                </div>
+                </div> */}
                 <div className='patient-id-div-title'>
                     <p className='pateint-id-title'> <span className='icon-tab user-icon'><FontAwesomeIcon icon={faCircleUser} /></span> <span>{PatientData.name}</span></p>
                 </div>
@@ -57,8 +54,13 @@ const Header = ({t}) => {
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to='/detials' onClick={() => handleHighlight(false)}><span className='icon-tab'><img src={medicleSummaryIcon} alt="" /></span><br /> Medical Summary</NavLink>
+                                <NavLink className="nav-link" to='/detials' onClick={() => handleHighlight(false)}><span className='icon-tab'><img src={medicalSummaryIcon} alt="" /></span><br />{t('medicalSummary')}</NavLink>
                             </li>
+                            <span className='vl'></span>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to='/followup' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faCalendarDays} /></span><br />{t('followUp')}</NavLink>
+                            </li>
+                            <span className='vl'></span>
                             <li className="nav-item">
                                 <NavLink className='nav-link' to='/medicine' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />{t('medicineSchedule')}</NavLink>
                             </li>
@@ -70,10 +72,7 @@ const Header = ({t}) => {
                             <li className="nav-item">
                                 <NavLink className='nav-link' to='/coupon' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('couponsDetails')}</NavLink>
                             </li>
-                            <span className='vl'></span>
-                            <li className="nav-item">
-                                <NavLink className='nav-link' to='/landing' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faTicket} /></span><br />{t('dashboardDetails')}</NavLink>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
