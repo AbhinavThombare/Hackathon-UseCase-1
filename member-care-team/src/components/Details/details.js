@@ -14,7 +14,6 @@ import PatientData from '../../patient_data.json'
 
 
 import './details.css'
-import PieChartWithCustomizedLabel from '../Landing/Piechart/piechart';
 
 const Details = () => {
 
