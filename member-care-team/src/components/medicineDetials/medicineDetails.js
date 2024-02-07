@@ -53,7 +53,7 @@ const MedicineDetials = () => {
                                     >
                                         <TableCell component="th" scope="row">{index + 1}</TableCell>
                                         <TableCell align="right">{row.medicationName}</TableCell>
-                                        <TableCell align="right">{row.totalUnits}</TableCell>
+                                        <TableCell align="right">{row.dategiven}</TableCell>
                                         <TableCell align="right">{row.modeOfDose}</TableCell>
                                         <TableCell align="right">
                                             <div>

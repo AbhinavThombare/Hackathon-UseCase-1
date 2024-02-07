@@ -39,7 +39,7 @@
   "patientSummaryBeforeAdmission":"The patient with severe abdominal pain, nausea, vomiting, and fever, often localized to the lower right abdomen,",
   "medicationData": [
     {
-      "date": "2024-02-06",
+      "dategiven": "2024-02-08",
       "medicationName": "Insulin",
       "doseDays": "3",
       "dosageDetails": [
@@ -71,7 +71,7 @@
       "modeOfDose": "Subcutaneous injection"
     },
     {
-      "date": "2024-02-07",
+      "dategiven": "2024-02-08",
       "medicationName": "Metformin",
       "doseDays": "3",
       "dosageDetails": [
@@ -99,7 +99,7 @@
       "modeOfDose": "Oral"
     },
     {
-      "date": "2024-02-08",
+      "dategiven": "2024-02-08",
       "medicationName": "Aspirin",
       "doseDays": "3",
       "dosageDetails": [
@@ -127,6 +127,7 @@
       "modeOfDose": "Oral"
     },
     {
+      "dategiven": "2024-02-08",
       "medicationName": "Ibuprofen",
       "doseDays": "3",
       "dosageDetails": [
@@ -154,6 +155,7 @@
       "modeOfDose": "Oral"
     },
     {
+      "dategiven": "2024-02-08",
       "medicationName": "Amoxicillin",
       "doseDays": "3",
       "dosageDetails": [
@@ -236,21 +238,21 @@
     {
       "Dates":"2024-02-10",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":true
     },
     {
       "Dates":"2024-02-11",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":true
     },
     {
       "Dates":"2024-02-12",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":false
     }
