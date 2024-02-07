@@ -14,8 +14,10 @@
 .discharge-summary-data-div-1 {
     width: 100%;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
+   display: flex ;
+   justify-content: center;
+   align-items: center;
+    background-color: white;
 }
 
 .discharge-summary-title {

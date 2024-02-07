@@ -1,4 +1,3 @@
-import Header from '../Header/header';
 import './Landing.css';
 import PieChartWithCustomizedLabel from './Piechart/piechart';
 import TriggerFocusTextarea from './TextArea/textArea';
@@ -9,7 +8,7 @@ const Landing=()=>{
         <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Overall Satisfaction</strong></p>
                         <div className='discharge-summary-data-div-1'>
-                            <PieChartWithCustomizedLabel/>
+                           <div> <PieChartWithCustomizedLabel/> </div>
                         </div>
 
                     </div>

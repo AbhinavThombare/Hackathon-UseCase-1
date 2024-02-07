@@ -43,10 +43,10 @@ const FollowUp = () => {
                             <TableHead>
                                 <TableRow >
                                     <TableCell className="head">S.No.</TableCell>
-                                    <TableCell className="head" align="right">FollowUp Date</TableCell>
+                                    <TableCell className="head" align="center">FollowUp Date</TableCell>
                                     <TableCell className="head" align="center">Patient Condition</TableCell>
-                                    <TableCell className="head" align="right">Supervisor Name</TableCell>
-                                    <TableCell className="head" align="right">Status</TableCell>
+                                    <TableCell className="head" align="center">Supervisor Name</TableCell>
+                                    <TableCell className="head" align="center">Status</TableCell>
 
 
 
@@ -60,11 +60,11 @@ const FollowUp = () => {
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
                                         <TableCell component="th" scope="row">{index + 1}</TableCell>
-                                        <TableCell align="right">{row.followupDate}</TableCell>
+                                        <TableCell align="center">{row.followupDate}</TableCell>
 
                                         <TableCell align="center" className='patient-status'>{row.customerCareInteraction}</TableCell>
-                                        <TableCell align="right">{row.CustomerCareNo}</TableCell>
-                                        <TableCell align="right">
+                                        <TableCell align="center">{row.CustomerCareNo}</TableCell>
+                                        <TableCell align="center">
                                             <div>
                                                 <Checkbox sx={{
                                                     color: "#2e7d32",

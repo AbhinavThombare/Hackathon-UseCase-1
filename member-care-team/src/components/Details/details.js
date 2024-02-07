@@ -62,7 +62,7 @@ const Details = () => {
 
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Patient Condition before Admission</strong></p>
-                        <div className='discharge-summary-data-div'>
+                        <div className='patient-Condition-div'>
                             <p>{PatientData.patientSummaryBeforeAdmission}</p>
                         </div>
 
