@@ -16,13 +16,13 @@ const App = () => {
     <BrowserRouter>
     <Header/>
     <Routes>
-      <Route path="/" element={<Details/>}/>
+      <Route path="/" element={<Landing/>}/>
       <Route path="/detials" element={<Details/>}/>
       <Route path="/medicine" element={<MedicineDetials/>}/>
       <Route path="/followup" element={<FollowUp/>}/>
       <Route path="/notification" element={<Notification/>}/>
       <Route path="/coupon" element={<Coupon/>}/>
-      <Route path="/landing" element={<Landing/>}/>
+      {/* <Route path="/landing" element={<Landing/>}/> */}
 
 
       </Routes></BrowserRouter>

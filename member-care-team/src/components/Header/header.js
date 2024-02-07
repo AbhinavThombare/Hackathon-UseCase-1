@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook, faBell, faCalendarDays, faCircleInfo, faCircleUser, faTicket } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faBell, faCalendarDays, faChartPie, faCircleInfo, faCircleUser, faFileMedical, faTicket } from '@fortawesome/free-solid-svg-icons';
 // import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faPills } from '@fortawesome/free-solid-svg-icons';
 import PatientData from '../../patient_data.json';
@@ -53,13 +53,12 @@ const Header = ({t}) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <NavLink className={highlight===true?'nav-link active':'nav-link active1'} to='/detials' onClick={() => handleHighlight(true)}><span className='icon-tab'><FontAwesomeIcon icon={faAddressBook} /></span><br />{t('medicalSummary')}</NavLink>
+                                <NavLink className={highlight === true ? 'nav-link active' : 'nav-link active1'} to='/' onClick={() => handleHighlight(true)}><span className='icon-tab'><FontAwesomeIcon icon={faChartPie} /></span><br />Dashboard - Overall Satisfaction</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">
-                                <NavLink className='nav-link' to='/followup' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faCalendarDays} /></span><br />{t('followUp')}</NavLink>
+                                <NavLink className="nav-link" to='/detials' onClick={() => handleHighlight(false)}><span className='icon-tab'><img src={medicleSummaryIcon} alt="" /></span><br /> Medical Summary</NavLink>
                             </li>
-                            <span className='vl'></span>
                             <li className="nav-item">
                                 <NavLink className='nav-link' to='/medicine' onClick={() => handleHighlight(false)}><span className='icon-tab'><FontAwesomeIcon icon={faPills} /></span><br />{t('medicineSchedule')}</NavLink>
                             </li>
