@@ -26,5 +26,7 @@
 }
 
 .text-area-data-div{
-    width: 30%;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
 }

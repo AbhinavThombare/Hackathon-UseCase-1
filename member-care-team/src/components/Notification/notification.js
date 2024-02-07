@@ -34,7 +34,7 @@ const Notification = () => {
                                     <TableCell className='TableHead' align="center">Supervisor Name</TableCell>
                                     <TableCell className='TableHead' align="center">Purpose</TableCell>
                                     <TableCell className='TableHead' align="center">Notification Type</TableCell>
-                                    <TableCell className='TableHead' align="center">Feedback Call</TableCell>
+                                    {/* <TableCell className='TableHead' align="center">Feedback Call</TableCell> */}
                                     <TableCell className='TableHead' align="center">Status</TableCell>
 
                                 </TableRow>
@@ -47,14 +47,14 @@ const Notification = () => {
                                     >
                                         <TableCell component="th" scope="row">{index + 1}</TableCell>
                                         <TableCell align="center">{row.Dates}</TableCell>
-                                        <TableCell align="center">{row.SupervisiorName}</TableCell>
+                                        <TableCell align="center">Mathew</TableCell>
                                         <TableCell align="center">{row.Purpose}</TableCell>
                                         <TableCell align="center">
                                             <CallIcon className='icon-style'   onClick={handleClick} /><br/>
                                             <br/> <MessageIcon className='icon-style'   onClick={handleClick} /> <br/>
                                             <br/> <NotificationsActiveIcon className='icon-style'   onClick={handleClick} />
                                         </TableCell>
-                                        <TableCell align="center">{row.FeedbackCall}</TableCell>
+                                        {/* <TableCell align="center">{row.FeedbackCall}</TableCell> */}
                                         <TableCell align="center"> {row.check ?<CheckBoxIcon className='check-box-style'/>: <CancelIcon className="cancel-icon-style"/>}</TableCell>
 
                                     </TableRow>

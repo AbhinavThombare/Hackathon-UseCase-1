@@ -57,9 +57,27 @@ const MedicineDetials = () => {
                                         <TableCell align="right">{row.modeOfDose}</TableCell>
                                         <TableCell align="right">
                                             <div>
-                                                <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')}  />
+                                                {/* <Checkbox checked={true} color={(row.takenDose[0].Mtaken === '1' ? 'success' : row.takenDose[0].Mtaken === '2' ? 'warning' : 'error')}  />
                                                 <Checkbox checked={true} color={(row.takenDose[1].Ataken === '1' ? 'success' : row.takenDose[1].Ataken === '2' ? 'warning' : 'error')} />
-                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} />
+                                                <Checkbox checked={true} color={(row.takenDose[2].Ntaken === '1' ? 'success' : row.takenDose[2].Ntaken === '2' ? 'warning' : 'error')} /> */}
+                                                <Checkbox sx={{
+                                                    color: "#2e7d32",
+                                                    '&.Mui-checked': {
+                                                        color: "#2e7d32",
+                                                    },
+                                                }} />
+                                                <Checkbox sx={{
+                                                    color: "#ed6c02",
+                                                    '&.Mui-checked': {
+                                                        color: "#ed6c02",
+                                                    },
+                                                }} />
+                                                <Checkbox sx={{
+                                                    color: "#d32f2f",
+                                                    '&.Mui-checked': {
+                                                        color: "#d32f2f",
+                                                    },
+                                                }}  />
                                             </div>
                                         </TableCell>
                                     </TableRow>

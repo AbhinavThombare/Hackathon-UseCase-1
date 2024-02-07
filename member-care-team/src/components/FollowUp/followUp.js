@@ -63,7 +63,7 @@ const FollowUp = () => {
                                         <TableCell align="center">{row.followupDate}</TableCell>
 
                                         <TableCell align="center" className='patient-status'>{row.customerCareInteraction}</TableCell>
-                                        <TableCell align="center">{row.CustomerCareNo}</TableCell>
+                                        <TableCell align="center">John</TableCell>
                                         <TableCell align="center">
                                             <div>
                                                 <Checkbox sx={{

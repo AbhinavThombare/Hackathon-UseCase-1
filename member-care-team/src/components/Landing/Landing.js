@@ -6,7 +6,7 @@ const Landing=()=>{
     return (
         <div>
         <div className='discharge-summary'>
-                        <p className='discharge-summary-title'><strong>Overall Satisfaction</strong></p>
+                        <p className='discharge-summary-title'><strong>AI Analysis</strong></p>
                         <div className='discharge-summary-data-div-1'>
                            <div> <PieChartWithCustomizedLabel/> </div>
                         </div>
@@ -15,7 +15,8 @@ const Landing=()=>{
                     <div className='discharge-summary'>
                         <p className='discharge-summary-title'><strong>Remarks*</strong></p>
                         <div className='text-area-data-div'>
-                            <TriggerFocusTextarea/>
+                            {/* <TriggerFocusTextarea/> */}
+                            <p>Patient missed few schedule doses prescribed by doctor.</p>
                         </div>
 
                     </div>

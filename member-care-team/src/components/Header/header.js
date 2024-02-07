@@ -50,7 +50,7 @@ const Header = ({t}) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <NavLink className={highlight === true ? 'nav-link active' : 'nav-link active1'} to='/' onClick={() => handleHighlight(true)}><span className='icon-tab'><FontAwesomeIcon icon={faChartPie} /></span><br />Dashboard - Overall Satisfaction</NavLink>
+                                <NavLink className={highlight === true ? 'nav-link active' : 'nav-link active1'} to='/' onClick={() => handleHighlight(true)}><span className='icon-tab'><FontAwesomeIcon icon={faChartPie} /></span><br />Dashboard - AI Analysis</NavLink>
                             </li>
                             <span className='vl'></span>
                             <li className="nav-item">

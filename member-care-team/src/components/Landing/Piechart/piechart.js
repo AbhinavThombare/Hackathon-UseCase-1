@@ -3,9 +3,9 @@ import * as React from 'react';
 import { PieChart, pieArcLabelClasses } from '@mui/x-charts/PieChart';
 
 const data = [
-  { label: 'Date1', value: 600, color: '#04CC0E' },
+  { label: 'Date1', value: 700, color: '#04CC0E' },
   { label: 'Date2', value: 200, color: '#FCB100' },
-  { label: 'Date3', value: 200, color: '#FC0000' },
+  { label: 'Date3', value: 100, color: '#FC0000' },
   
 ];
 
