@@ -238,21 +238,21 @@
     {
       "Dates":"2024-02-10",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":true
     },
     {
       "Dates":"2024-02-11",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":true
     },
     {
       "Dates":"2024-02-12",
       "SupervisiorName":"Abhishek",
-      "Purpose":"Medicine Remainder",
+      "Purpose":"Medicine Reminder",
       "FeedbackCall":"8788675897",
       "check":false
     }
