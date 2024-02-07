@@ -4,15 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faBell, faCalendarDays, faChartPie, faCircleInfo, faCircleUser, faFileMedical, faTicket } from '@fortawesome/free-solid-svg-icons';
 // import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faPills } from '@fortawesome/free-solid-svg-icons';
-<<<<<<< HEAD
-import PatientData from '../../patient_data.json'
-import logo from '../../assests/Optum-logo.png';
-import medicleSummaryIcon from '../../assests/icon/medical-history.png'
-=======
 import PatientData from '../../patient_data.json';
 import i18n from '../../i18n';
 import { withNamespaces } from 'react-i18next';
->>>>>>> 761e742a69622086db994dd12e3d650631038ba2
 
 import './header.css';
 
