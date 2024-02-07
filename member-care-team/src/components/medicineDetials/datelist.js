@@ -5,10 +5,10 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export default function SelectVariants() {
-  const [age, setAge] = React.useState('');
+  const [date, setDate] = React.useState('2024-08-02');
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setDate(event.target.value);
   };
 
   return (
@@ -18,16 +18,15 @@ export default function SelectVariants() {
         <Select
           labelId="demo-simple-select-standard-label"
           id="demo-simple-select-standard"
-          value={age}
+          defaultValue={10}
+          value={date}
           onChange={handleChange}
           label="Age"
         >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>2024-08-02</MenuItem>
-          <MenuItem value={20}>2024-09-02</MenuItem>
-          <MenuItem value={30}>2024-10-02</MenuItem>
+          
+          <MenuItem value="2024-08-02">2024-08-02</MenuItem>
+          <MenuItem value="2024-09-02">2024-09-02</MenuItem>
+          <MenuItem value="2024-10-02">2024-10-02</MenuItem>
         </Select>
       </FormControl>
       
